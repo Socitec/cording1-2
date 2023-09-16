@@ -1,0 +1,81 @@
+/* CONTACT_SP */
+
+@use "../mixin" as *; //変数読み込み
+
+@media (width < $smartphone-breakpoint ) {
+
+  //メインビジュアル
+  .contactPage__firstview__section {
+    padding-top: 35px;
+    padding-bottom: 5px;
+
+    .top-heading-text {
+      padding-top: 30px;
+      padding-bottom: 20px;
+      font-size: $large-font-size;
+    }
+
+    .contact__heading-text {
+      padding-right: 7px;
+      padding-left: 7px;
+      font-size: $large-font-size;
+      letter-spacing: 0;
+    }
+
+    .contact__heading--strong {
+      font-size: $large3-font-size;
+      letter-spacing: 0;
+    }
+
+    .description {
+      padding: 15px 0;
+      font-size: $small2-font-size;
+      line-height: 20px;
+    }
+  }
+
+  //問合せフォーム
+  .contactPage__form__section {
+    padding-top: 30px;
+    padding-bottom: 50px;
+
+    .container {
+      width: 84%;
+      max-width: 330px;
+    }
+
+    form {
+      gap: 20px;
+    }
+
+    .form-label-box {
+      font-size: $small-font-size;
+    }
+
+    .form-item .wpcf7-checkbox {
+      display: grid;
+      gap: 10px;
+    }
+
+    .wpcf7-list-item-label {
+      font-size: $small2-font-size;
+    }
+
+    .form-item .wpcf7-text {
+      min-height: 40px;
+    }
+
+    #name .wpcf7-text {
+      width: min(100%, 220px);
+    }
+
+    .form-button p {
+      margin-top: 10px;
+    }
+
+    .submit-button {
+      font-size: $small-font-size;
+    }
+
+  }
+}

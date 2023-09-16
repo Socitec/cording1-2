@@ -1,0 +1,40 @@
+/* Header_SP */
+
+@use "../mixin" as *; //変数読み込み
+
+.footer {
+    padding-top: 43px;
+    padding-bottom: 20px;
+    background-color: #FAFAFA;
+
+    .container {
+        width: 100%;
+        padding-right: 37px;
+        padding-left: 50px;
+    }
+
+    .footer-logo {
+        width: 353.916px;
+    }
+
+    .link-box {
+        display: flex;
+        gap: 25px;
+        padding-top: 21px;
+    }
+
+    .link {
+        text-decoration: underline;
+    }
+
+    .link-text {
+        font-size: $large-font-size;
+        line-height: 22px;
+    }
+
+    .copyright-text{
+        text-align: right;
+        font-size: $large-font-size;
+        line-height: 22px;
+    }
+}

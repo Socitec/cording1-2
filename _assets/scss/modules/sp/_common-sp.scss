@@ -1,0 +1,18 @@
+/* Common_SP */
+
+@use "../mixin" as *; //変数読み込み
+
+@media (width < $smartphone-breakpoint ) {
+
+  * {
+    font-size: $small2-font-size;
+  }
+
+  .c_sp-emerge {
+    display: block;
+  }
+
+  .c_tb-only-disapear {
+    display: block;
+  }
+}

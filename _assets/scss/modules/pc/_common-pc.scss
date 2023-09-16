@@ -1,0 +1,74 @@
+/* 全ページ共通 */
+
+@use "../mixin" as *; //変数読み込み
+
+* {
+  font-size: $main-font-size;
+  color: $main-text-color;
+  font-family: 'Jost', sans-serif;
+  font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: $large6-font-size;
+}
+
+h2 {
+  font-size: $large5-font-size;
+  text-align: center;
+  font-weight: 700;
+}
+
+img {
+  max-width: 100%;
+}
+
+section {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.container {
+  width: min(100%, $container-width);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+.c_heading-text {}
+
+.c_heading-icon-area {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.c_heading-icon {
+  width: 120px;
+  height: 5px;
+  display: inline-block;
+  background: -moz-linear-gradient(left, $sub3-text-color 0%, $sub3-text-color 50%, $strong-background-color 50%, $strong-background-color 100%);
+  background: -webkit-linear-gradient(left, $sub3-text-color 0%, $sub3-text-color 50%, $strong-background-color 50%, $strong-background-color 100%);
+  background: linear-gradient(to right, $sub3-text-color 0%, $sub3-text-color 50%, $strong-background-color 50%, $strong-background-color 100%);
+}
+
+.c_subheading-text {
+  text-align: center;
+  font-size: $large2-font-size;
+  font-weight: 700;
+  line-height: 1.6em;
+}
+
+.c_tb-emerge {
+  display: none;
+}
+
+.c_sp-emerge {
+  display: none;
+}
+
+.c_tb-only-disapear {
+  display: block;
+}

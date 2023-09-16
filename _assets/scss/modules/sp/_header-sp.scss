@@ -1,0 +1,48 @@
+/* Header_SP */
+
+@use "../mixin" as *; //変数読み込み
+
+@media (width < $smartphone-breakpoint ) {
+
+
+  .header {
+    height: $header-height_sp;
+
+
+    .logo-area {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .logo-img {
+      max-height: 22px;
+    }
+
+    .humberger {
+      width: $header-height_sp;
+      height: $header-height_sp;
+    }
+
+    .humberger__line {
+      top: calc(23 / 45 *$header-height_sp);
+      width: calc(28/45 * $header-height_sp);
+    }
+
+    .humberger__line:before {
+      top: calc(-10/45*$header-height_sp);
+    }
+
+    .humberger__line:after {
+      top: calc(10/45*$header-height_sp);
+    }
+
+    .humberger__text {
+      bottom: calc(8/45*$header-height_sp);
+    }
+
+    .header__nav-area {
+      margin-top: $header-height_sp;
+    }
+
+  }
+}

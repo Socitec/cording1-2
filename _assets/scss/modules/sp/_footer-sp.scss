@@ -1,0 +1,35 @@
+/* Footer_SP */
+
+@use "../mixin" as *; //変数読み込み
+
+@media (width < $smartphone-breakpoint ) {
+
+  .footer {
+
+    .container {
+      text-align: center;
+    }
+
+    .footer-logo {
+      height: 38px;
+      width: auto;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .copyright-text {
+      text-align: center;
+      font-size: $small-font-size;
+    }
+
+    .link-box {
+      justify-content: center;
+      gap: 20px;
+      font-size: $small-font-size;
+    }
+
+    .link-text {
+      font-size: $small2-font-size;
+    }
+  }
+}

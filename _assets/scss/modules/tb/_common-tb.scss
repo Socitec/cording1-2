@@ -1,0 +1,46 @@
+/* Common_TB */
+
+@use "../mixin" as *; //変数読み込み
+
+@media (width < $tablet-breakpoint ) {
+
+  section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .container {
+    width: 87%;
+    min-width: 340px;
+  }
+
+  .c_heading-text {
+    font-size: $large-font-size;
+  }
+
+  .c_heading-icon-area {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .c_heading-icon {
+    width: 60px;
+    height: 2px;
+  }
+
+  .c_subheading-text {
+    font-size: $small2-font-size;
+  }
+
+  .c_tb-emerge {
+    display: block;
+  }
+
+  .c_sp-disappear {
+    display: none;
+  }
+
+  .c_tb-only-disapear{
+    display: none;
+  }
+}

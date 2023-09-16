@@ -1,0 +1,2085 @@
+@charset "UTF-8";
+/*! destyle.css v2.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+/* Reset box-model and set borders */
+/* ============================================ */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
+}
+
+/* Document */
+/* ============================================ */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 3. Remove gray overlay on links for iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -webkit-tap-highlight-color: transparent; /* 3*/
+}
+
+/* Sections */
+/* ============================================ */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/* Vertical rhythm */
+/* ============================================ */
+p,
+table,
+blockquote,
+address,
+pre,
+iframe,
+form,
+figure,
+dl {
+  margin: 0;
+}
+
+/* Headings */
+/* ============================================ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+/* Lists (enumeration) */
+/* ============================================ */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Lists (definition) */
+/* ============================================ */
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/* Grouping content */
+/* ============================================ */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+  border-top-width: 1px;
+  margin: 0;
+  clear: both;
+  color: inherit;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: inherit; /* 2 */
+}
+
+address {
+  font-style: inherit;
+}
+
+/* Text-level semantics */
+/* ============================================ */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: inherit; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content */
+/* ============================================ */
+/**
+ * Prevent vertical alignment issues.
+ */
+img,
+embed,
+object,
+iframe {
+  vertical-align: middle;
+}
+
+/* Forms */
+/* ============================================ */
+/**
+ * Reset form fields to make them styleable
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-appearance: none;
+  appearance: none;
+  vertical-align: middle;
+  color: inherit;
+  font: inherit;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border-radius: 0;
+  text-align: inherit;
+}
+
+/**
+ * Reset radio and checkbox appearance to preserve their look in iOS.
+ */
+[type=checkbox] {
+  -webkit-appearance: checkbox;
+  appearance: checkbox;
+}
+
+[type=radio] {
+  -webkit-appearance: radio;
+  appearance: radio;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+button[disabled],
+[type=button][disabled],
+[type=reset][disabled],
+[type=submit][disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Remove arrow in IE10 & IE11
+ */
+select::-ms-expand {
+  display: none;
+}
+
+/**
+ * Remove padding
+ */
+option {
+  padding: 0;
+}
+
+/**
+ * Reset to invisible
+ */
+fieldset {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the outline style in Safari.
+ */
+[type=search] {
+  outline-offset: -2px; /* 1 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/**
+ * Clickable labels
+ */
+label[for] {
+  cursor: pointer;
+}
+
+/* Interactive */
+/* ============================================ */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/*
+ * Remove outline for editable content.
+ */
+[contenteditable] {
+  outline: none;
+}
+
+/* Table */
+/* ============================================ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption {
+  text-align: left;
+}
+
+td,
+th {
+  vertical-align: top;
+  padding: 0;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Misc */
+/* ============================================ */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+/* PC用スタイル */
+/* 全ページ共通 */
+/* scss変数設定 */
+/* 色 */
+/* フォントサイズ */
+/* コンテナサイズ */
+/* ブレークポイント */
+/* ヘッダーサイズ */
+* {
+  font-size: 16px;
+  color: #333;
+  font-family: "Jost", sans-serif;
+  font-family: "Noto Sans", "Noto Sans JP", sans-serif;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 700;
+}
+
+img {
+  max-width: 100%;
+}
+
+section {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.container {
+  width: min(100%, 1200px);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.c_heading-icon-area {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.c_heading-icon {
+  width: 120px;
+  height: 5px;
+  display: inline-block;
+  background: -moz-linear-gradient(left, #30C1FF 0%, #30C1FF 50%, #FFD362 50%, #FFD362 100%);
+  background: -webkit-linear-gradient(left, #30C1FF 0%, #30C1FF 50%, #FFD362 50%, #FFD362 100%);
+  background: linear-gradient(to right, #30C1FF 0%, #30C1FF 50%, #FFD362 50%, #FFD362 100%);
+}
+
+.c_subheading-text {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.6em;
+}
+
+.c_tb-emerge {
+  display: none;
+}
+
+.c_sp-emerge {
+  display: none;
+}
+
+.c_tb-only-disapear {
+  display: block;
+}
+
+/* Header_SP */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 90px;
+  z-index: 50;
+  background-color: #fff;
+}
+.header .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-right: 29px;
+  padding-left: 29px;
+}
+.header .logo-img {
+  width: 366.79px;
+}
+.header .menu-area {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 35px;
+}
+.header .contact-button {
+  padding-right: 30px;
+  padding-left: 30px;
+  background-color: #FF833E;
+  border-radius: 100px;
+  font-size: 22px;
+  color: #fff;
+  font-weight: 700;
+}
+.header .contact-link {
+  line-height: 50px;
+}
+.header .global-navigation__list {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 20px;
+}
+.header .global-navigation__link {
+  color: #333;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+/* Topページ */
+/* メインビジュアル */
+.firstview__section {
+  background-color: #F8FDFF;
+  padding-top: 90px;
+}
+.firstview__section .container {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.firstview__section .topimg--sp {
+  display: none;
+}
+.firstview__section .button-area {
+  position: absolute;
+  top: 35vw;
+  width: 100%;
+  text-align: center;
+}
+.firstview__section .button {
+  z-index: 20;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 15px 30px;
+}
+.firstview__section .button-link {
+  padding: 15px 30px;
+  background-color: #FF833E;
+  border-radius: 100px;
+  font-size: 22px;
+  color: #fff;
+  font-weight: 700;
+}
+.firstview__section .bottom-text {
+  margin-top: 14px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 23px;
+}
+
+/* こんな人におすすめ */
+.target__section {
+  background-color: #F8FDFF;
+  padding-top: 46px;
+  padding-bottom: 100px;
+}
+.target__section .text-large {
+  font-size: 38px;
+}
+.target__section .main-area {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 52px;
+}
+.target__section .item {
+  width: 320px;
+  text-align: center;
+}
+.target__section .img {
+  width: 90%;
+  aspect-ratio: 1/1;
+  margin-right: auto;
+  margin-left: auto;
+}
+.target__section .description-toptext {
+  padding-top: 25px;
+  color: #30C1FF;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.5em;
+}
+.target__section .description-bottomtext {
+  padding-top: 20px;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+/* 複業職人とは */
+.about__section {
+  background-color: rgba(255, 211, 98, 0.1);
+}
+.about__section .main-area {
+  position: relative;
+  padding-top: 60px;
+}
+.about__section .photo-pc {
+  position: absolute;
+  right: 0;
+  width: 400px;
+}
+.about__section .photo-sp {
+  display: none;
+}
+.about__section .heading2-box {
+  padding-left: 82px;
+  padding-bottom: 20px;
+}
+.about__section .heading2-text {
+  padding: 19px 43px;
+  position: relative;
+  display: inline-block;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 2.6px;
+}
+.about__section .heading2-text::before,
+.about__section .heading2-text::after {
+  content: "";
+  width: 36px;
+  height: 36px;
+  position: absolute;
+}
+.about__section .heading2-text::before {
+  border-left: solid 2px #FFD362;
+  border-top: solid 2px #FFD362;
+  top: 0;
+  left: 0;
+}
+.about__section .heading2-text::after {
+  border-right: solid 2px #FFD362;
+  border-bottom: solid 2px #FFD362;
+  bottom: 0;
+  right: 0;
+}
+.about__section .heading2-text--strong {
+  font-size: 38px;
+  color: #F19B12;
+  font-weight: 700;
+  letter-spacing: 3.8px;
+  padding-right: 0.1em;
+  padding-left: 0.1em;
+}
+.about__section .description-box {
+  max-width: 981px;
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 47px 255px 47px 63px;
+  box-shadow: 10px 10px rgba(255, 211, 98, 0.6);
+}
+.about__section .description-text {
+  line-height: 34px;
+  padding-bottom: 15px;
+  text-align: left;
+}
+.about__section .description-text--strong {
+  font-size: 18px;
+  font-weight: 700;
+  background: linear-gradient(transparent 80%, #ffe39a 80%);
+}
+.about__section .author-text {
+  text-align: right;
+  color: #F29C14;
+  font-weight: 700;
+}
+
+/* 特徴 */
+.feature__section {
+  background-color: #F8FDFF;
+}
+.feature__section .main-area {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 37px;
+  padding-top: 37px;
+}
+.feature__section .item {
+  border-radius: 15px;
+  background-color: #fff;
+}
+.feature__section .top-portion {
+  background-color: #FFD362;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.feature__section .point {
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 33px;
+  font-family: "Caveat", cursive;
+  font-weight: 700;
+}
+.feature__section .heading2-text {
+  padding-top: 8px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4em;
+}
+.feature__section .img {
+  width: 100%;
+}
+.feature__section .text {
+  padding: 30px;
+  line-height: 28px;
+}
+
+/* 講師紹介 */
+.staff__section,
+.supervise__section {
+  background-color: rgba(255, 211, 98, 0.1);
+}
+.staff__section .main-area,
+.supervise__section .main-area {
+  display: grid;
+  gap: 50px;
+  padding-top: 60px;
+}
+.staff__section .box,
+.supervise__section .box {
+  background-color: #fff;
+  padding: 30px 55px 30px 35px;
+  display: flex;
+  column-gap: 50px;
+  border-radius: 20px;
+}
+.staff__section .img-pc,
+.supervise__section .img-pc {
+  width: 380px;
+  height: min-content;
+}
+.staff__section .img-sp,
+.supervise__section .img-sp {
+  display: none;
+}
+.staff__section .company,
+.supervise__section .company {
+  padding-top: 21px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.staff__section .heading2-text,
+.supervise__section .heading2-text {
+  padding-top: 5px;
+  padding-bottom: 22px;
+  font-size: 18px;
+  font-weight: 700;
+  border-bottom: 1px solid #DFDFDF;
+}
+.staff__section .text-large,
+.supervise__section .text-large {
+  font-size: 26px;
+  font-weight: 700;
+}
+.staff__section .english,
+.supervise__section .english {
+  padding-left: 20px;
+  color: #FFD362;
+  font-size: 24px;
+  font-family: "Caveat", cursive;
+  font-weight: 700;
+}
+.staff__section .description,
+.supervise__section .description {
+  padding-top: 24px;
+  line-height: 28px;
+}
+.staff__section .link,
+.supervise__section .link {
+  color: #036EB7;
+  text-decoration: underline;
+}
+
+.supervise__section {
+  padding-top: 0;
+}
+
+/* プログラム　*/
+.program__section {
+  background-color: #F8FDFF;
+}
+.program__section .text--strong {
+  font-size: 24px;
+  color: #F19B12;
+  font-weight: 700;
+}
+.program__section .main-area {
+  position: relative;
+  padding-top: 113px;
+}
+.program__section .inner-wrapper {
+  display: grid;
+  gap: 120px;
+}
+.program__section .box {
+  display: grid;
+  grid-template-columns: 400px auto;
+  grid-template-rows: auto 1fr auto;
+  background-color: #fff;
+  border-radius: 20px;
+  z-index: 20;
+}
+.program__section .img {
+  position: relative;
+  top: -40px;
+  left: -40px;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  width: 400px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+.program__section .heading2-item {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  padding-top: 46px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20.3px;
+}
+.program__section .number {
+  font-size: 50px;
+  color: #30C1FF;
+  font-family: "Roboto", sans-serif;
+}
+.program__section .heading2-text {
+  font-size: 30px;
+  line-height: 55px;
+  font-weight: 700;
+}
+.program__section .heading2-bottom-text {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+}
+.program__section .description {
+  padding-top: 20px;
+  margin-right: 69px;
+  font-size: 18px;
+  line-height: 30px;
+  border-top: 1px solid #DFDFDF;
+}
+.program__section .icon-portion {
+  display: flex;
+  gap: 15px;
+  padding-top: 15px;
+  padding-bottom: 50px;
+}
+.program__section .plan-icon {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+}
+.program__section .icon--starter {
+  background-color: #6DBAEE;
+}
+.program__section .icon--standard {
+  background-color: #036EB7;
+}
+.program__section .icon--afterfollow {
+  background-color: #FF9458;
+}
+.program__section .line {
+  position: absolute;
+  top: 400px;
+  left: 160px;
+  border-left: 3px dotted #30C1FF;
+  height: 85%;
+}
+
+/* プラン */
+.plan__section {
+  background-color: rgba(255, 211, 98, 0.1);
+}
+.plan__section .main-area {
+  padding-top: 60px;
+  overflow-x: scroll;
+}
+.plan__section .table-pc,
+.plan__section .table-box-sp {
+  white-space: nowrap;
+  border: 0.5px solid #DFDFDF;
+}
+.plan__section .table-pc th,
+.plan__section .table-box-sp th {
+  padding-top: 19px;
+  padding-bottom: 19px;
+  text-align: center;
+  vertical-align: middle;
+  border: 0.5px solid #DFDFDF;
+}
+.plan__section .table-pc .row-heading,
+.plan__section .table-box-sp .row-heading {
+  color: #fff;
+  font-weight: 700;
+  background-color: #FAFAFA;
+}
+.plan__section .table-pc .row-heading--starter,
+.plan__section .table-box-sp .row-heading--starter {
+  background-color: #6DBAEE;
+}
+.plan__section .table-pc .row-heading--standard,
+.plan__section .table-box-sp .row-heading--standard {
+  background-color: #036EB7;
+}
+.plan__section .table-pc .row-heading--afterfollow,
+.plan__section .table-box-sp .row-heading--afterfollow {
+  background-color: #FF9458;
+}
+.plan__section .table-pc .afterfollow--small,
+.plan__section .table-box-sp .afterfollow--small {
+  color: #fff;
+}
+.plan__section .table-pc td,
+.plan__section .table-box-sp td {
+  padding: 13px 20px;
+  border: 0.5px solid #DFDFDF;
+  font-size: 14px;
+  line-height: 1.6em;
+  background-color: #fff;
+}
+.plan__section .table-pc .main-data--heading,
+.plan__section .table-box-sp .main-data--heading {
+  font-weight: 700;
+}
+.plan__section .table-pc .heading-column,
+.plan__section .table-box-sp .heading-column {
+  font-weight: 700;
+  text-align: center;
+  background-color: #FAFAFA;
+  vertical-align: middle;
+}
+.plan__section .table-pc .main-data--stater-number,
+.plan__section .table-box-sp .main-data--stater-number {
+  font-weight: 700;
+  line-height: 24px;
+  color: #6DBAEE;
+}
+.plan__section .table-pc .main-data--standard-number,
+.plan__section .table-box-sp .main-data--standard-number {
+  font-weight: 700;
+  line-height: 24px;
+  color: #036EB7;
+}
+.plan__section .table-pc .main-data--afterfollow-number,
+.plan__section .table-box-sp .main-data--afterfollow-number {
+  font-weight: 700;
+  line-height: 24px;
+  color: #FF9458;
+}
+.plan__section .table-pc .data--center,
+.plan__section .table-box-sp .data--center {
+  text-align: center;
+  vertical-align: middle;
+}
+.plan__section .table-box-sp {
+  display: none;
+}
+.plan__section .supplyment {
+  padding-top: 10px;
+  font-size: 14px;
+  text-indent: -2em;
+  padding-left: 2em;
+}
+
+/* ニュース */
+.news__section {
+  background-color: #F8FDFF;
+}
+.news__section .comingsoon {
+  padding-top: 60px;
+  text-align: center;
+}
+.news__section .comingsoon .img {
+  width: 211px;
+}
+
+/* 受講事例 */
+.case__section {
+  background-color: #F8FDFF;
+}
+.case__section .comingsoon {
+  padding-top: 60px;
+  text-align: center;
+}
+.case__section .img {
+  width: 211px;
+}
+
+/* クロージング */
+.contact__section {
+  padding-top: 92px;
+  padding-bottom: 98px;
+  background: url(../img/top_contact-background.png);
+  text-align: center;
+}
+.contact__section .container {
+  display: flex;
+  flex-direction: column;
+}
+.contact__section .contact__heading-text {
+  display: inline-block;
+  padding-right: 23px;
+  padding-left: 23px;
+  font-size: 32px;
+  background-color: #fff;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+  width: max-content;
+  margin-right: auto;
+  margin-left: auto;
+}
+.contact__section .contact__heading--strong {
+  font-size: 50px;
+  color: #30C1FF;
+  font-weight: 600;
+  letter-spacing: 9.5px;
+  background-image: radial-gradient(circle at center, #333 10%, transparent 10%);
+  background-position: top left;
+  background-repeat: repeat-x;
+  background-size: 1.1em 0.3em;
+  padding-top: 0.1em;
+}
+.contact__section .description {
+  padding: 27px 23px 30px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 40px;
+}
+.contact__section .contact-button {
+  padding: 15px 30px;
+  background-color: #FF833E;
+  border-radius: 100px;
+  font-size: 22px;
+  color: #fff;
+  font-weight: 700;
+}
+
+/* 固定ボタン */
+.fixed-button {
+  position: fixed;
+  right: 36px;
+  bottom: 36px;
+  background-color: #FF833E;
+  display: inline-block;
+  width: 150px;
+  aspect-ratio: 1/1;
+  text-align: center;
+  border-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  z-index: 50;
+}
+.fixed-button .inner {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.fixed-button .chat-icon {
+  margin-bottom: 5px;
+}
+.fixed-button .button-text {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.3em;
+}
+.fixed-button .sp-disappear {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+/* Contactページ */
+/* メインビジュアル */
+.contactPage__firstview__section {
+  padding-top: 92px;
+  padding-bottom: 22px;
+  background: url(../img/top_contact-background.png);
+  text-align: center;
+}
+.contactPage__firstview__section .container {
+  display: flex;
+  flex-direction: column;
+}
+.contactPage__firstview__section .top-heading-text {
+  padding-top: 62px;
+  padding-bottom: 36px;
+  font-size: 30px;
+  color: #fff;
+  font-weight: 600;
+}
+.contactPage__firstview__section .contact__heading-text {
+  display: inline-block;
+  padding-right: 23px;
+  padding-left: 23px;
+  font-size: 32px;
+  background-color: #fff;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+  width: max-content;
+  margin-right: auto;
+  margin-left: auto;
+}
+.contactPage__firstview__section .contact__heading--strong {
+  font-size: 50px;
+  color: #30C1FF;
+  font-weight: 600;
+  letter-spacing: 9.5px;
+  background-image: radial-gradient(circle at center, #333 10%, transparent 10%);
+  background-position: top left;
+  background-repeat: repeat-x;
+  background-size: 1.1em 0.3em;
+  padding-top: 0.1em;
+}
+.contactPage__firstview__section .description {
+  padding: 27px 23px 30px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+.contactPage__form__section {
+  padding-top: 100px;
+  padding-bottom: 80px;
+  background-color: #F8FDFF;
+}
+.contactPage__form__section form {
+  display: grid;
+  gap: 50px;
+}
+.contactPage__form__section .container {
+  width: min(100%, 1000px);
+}
+.contactPage__form__section .form-label-box {
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+}
+.contactPage__form__section .form-item .wpcf7-text {
+  min-height: 60px;
+  align-items: center;
+  border: 1px solid #dfdfdf;
+  background-color: #fff;
+}
+.contactPage__form__section .form-item .form-checkbox {
+  padding-top: 20px;
+}
+.contactPage__form__section .form-item .wpcf7-textarea {
+  width: 100%;
+  border: 1px solid #dfdfdf;
+  background-color: #fff;
+}
+.contactPage__form__section .form-item .wpcf7-checkbox {
+  display: grid;
+  gap: 20px;
+}
+.contactPage__form__section .wpcf7-list-item-label {
+  font-size: 18px;
+}
+.contactPage__form__section #name .wpcf7-text {
+  width: min(100%, 500px);
+}
+.contactPage__form__section #mail .wpcf7-text {
+  width: min(100%, 700px);
+}
+.contactPage__form__section #telephone .wpcf7-text {
+  width: min(100%, 500px);
+}
+.contactPage__form__section .form-button p {
+  text-align: center;
+  color: rgba(255, 255, 255, 0);
+}
+.contactPage__form__section .submit-button {
+  padding: 11px 69px;
+  background-color: #FF833E;
+  border-radius: 100px;
+  font-size: 22px;
+  color: #fff;
+  font-weight: 700;
+}
+.contactPage__form__section .submit-button br {
+  display: none;
+}
+.contactPage__form__section .submit-button .wpcf7-spinner {
+  display: none;
+}
+
+/* Header_SP */
+.footer {
+  padding-top: 43px;
+  padding-bottom: 20px;
+  background-color: #FAFAFA;
+}
+.footer .container {
+  width: 100%;
+  padding-right: 37px;
+  padding-left: 50px;
+}
+.footer .footer-logo {
+  width: 353.916px;
+}
+.footer .link-box {
+  display: flex;
+  gap: 25px;
+  padding-top: 21px;
+}
+.footer .link {
+  text-decoration: underline;
+}
+.footer .link-text {
+  font-size: 18px;
+  line-height: 22px;
+}
+.footer .copyright-text {
+  text-align: right;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+/* Tablet用スタイル */
+/* Common_TB */
+@media (width < 1280px) {
+  section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .container {
+    width: 87%;
+    min-width: 340px;
+  }
+  .c_heading-text {
+    font-size: 18px;
+  }
+  .c_heading-icon-area {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .c_heading-icon {
+    width: 60px;
+    height: 2px;
+  }
+  .c_subheading-text {
+    font-size: 12px;
+  }
+  .c_tb-emerge {
+    display: block;
+  }
+  .c_sp-disappear {
+    display: none;
+  }
+  .c_tb-only-disapear {
+    display: none;
+  }
+}
+/* Header_TB */
+@media (width < 1360px) {
+  .header {
+    height: 60px;
+  }
+  .header .logo-img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-height: 40px;
+    width: auto;
+  }
+  .header .inner {
+    height: 100%;
+    padding-right: 0;
+    padding-left: 9px;
+  }
+  .header .menu-area {
+    height: 100%;
+    flex-direction: row;
+  }
+  .header .contact-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 15px;
+    height: 100%;
+    border-radius: 0;
+    font-size: 16px;
+  }
+  .header .contact-link {
+    line-height: 60px;
+  }
+  .header .menu-area {
+    flex-direction: row;
+    gap: 0;
+  }
+  .header .global-navigation__list {
+    gap: 30px;
+    flex-direction: column;
+  }
+  .header .menu-link {
+    font-size: 17px;
+  }
+  .header .humberger {
+    display: block;
+    margin-left: auto;
+    position: relative;
+    z-index: 80;
+    border: none;
+    background-color: transparent;
+    width: 60px;
+    height: 60px;
+    background-color: #dfdfdf;
+  }
+  .header .humberger.-active .humberger__line {
+    background-color: transparent;
+  }
+  .header .humberger.-active .humberger__line::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+  .header .humberger.-active .humberger__line::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+  .header .humberger.-active .humberger__text::before {
+    content: "閉じる";
+  }
+  .header .humberger__line {
+    display: block;
+    height: 2px;
+    position: absolute;
+    top: 30.6666666667px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 37.3333333333px;
+    background-color: #fff;
+    transition: 0.4s;
+  }
+  .header .humberger__line:before,
+  .header .humberger__line:after {
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    transition: inherit;
+  }
+  .header .humberger__line:before {
+    top: -13.3333333333px;
+  }
+  .header .humberger__line:after {
+    top: 13.3333333333px;
+  }
+  .header .humberger__text {
+    position: absolute;
+    bottom: 10.6666666667px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+  .header .humberger__text::before {
+    content: "メニュー";
+    text-align: center;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 900;
+  }
+  .header .header__nav-area {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 9;
+    width: 100%;
+    visibility: hidden;
+    margin-top: 60px;
+    background-color: #fff;
+    transition: 0.4s;
+  }
+  .header .header__nav-area.-active {
+    left: 0;
+    visibility: visible;
+  }
+  .header .global-navigation {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+  .header .global-navigation__link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #172e59;
+    font-weight: 900;
+    transition: color 0.4s;
+    font-size: 0.875rem;
+  }
+  .header .global-navigation__link.-accordion {
+    position: relative;
+    background: none;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    padding: 0;
+  }
+  .header .global-navigation__link.-accordion::after {
+    content: "";
+    display: block;
+    height: 12px;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    width: 2px;
+    background-color: #ed3242;
+    transform: translateY(-50%);
+    transition: transform 0.4s;
+  }
+  .header .global-navigation__link.-accordion::before {
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 12px;
+    background-color: #ed3242;
+    transform: translateY(-50%);
+  }
+  .header .global-navigation__link.-active::after {
+    transform: translateY(-50%) rotate(-90deg);
+  }
+  .header .accordion {
+    height: 0;
+    visibility: hidden;
+    transition: 0.4s;
+  }
+  .header .accordion.-active {
+    height: auto;
+    padding-top: 30px;
+    visibility: visible;
+  }
+  .header .accordion__list li {
+    font-size: 0.75rem;
+  }
+  .header .accordion__list li + li {
+    margin-top: 21px;
+  }
+  .header .accordion__link {
+    color: #172e59;
+  }
+}
+/* TOP_TB */
+@media (width < 1280px) {
+  .firstview__section {
+    padding-top: 60px;
+  }
+  .firstview__section .button {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+  .firstview__section .button-link {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 16px;
+  }
+  .firstview__section .bottom-text {
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 1.3em;
+    height: 0;
+  }
+  .target__section {
+    padding-top: 0;
+    padding-bottom: 30px;
+  }
+  .target__section .text-large {
+    font-size: 20px;
+  }
+  .target__section .img {
+    width: 110px;
+    height: 110px;
+  }
+  .target__section .item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .target__section .text-portion {
+    text-align: left;
+    width: 58%;
+  }
+  .target__section .description-toptext {
+    padding-top: 0;
+    font-size: 14px;
+  }
+  .target__section .description-bottomtext {
+    padding-top: 5px;
+    font-size: 12px;
+    line-height: normal;
+  }
+  .about__section {
+    padding-bottom: 40px;
+  }
+  .about__section .main-area {
+    position: relative;
+    padding-top: 0;
+    text-align: center;
+  }
+  .about__section .photo-pc {
+    display: none;
+  }
+  .about__section .photo-sp {
+    display: inline-block;
+    width: auto;
+    position: relative;
+    top: 31px;
+    height: 180px;
+    z-index: 20;
+  }
+  .about__section .heading2-box {
+    position: absolute;
+    padding: 57px 25px 0;
+    padding-bottom: unset;
+    z-index: 20;
+    width: 100%;
+  }
+  .about__section .heading2-text {
+    text-align: center;
+    font-size: 16px;
+    padding-right: 38px;
+    padding-left: 38px;
+    line-height: 30px;
+  }
+  .about__section .heading2-text--strong {
+    font-size: 22px;
+  }
+  .about__section .description-box {
+    border-radius: 10px;
+    padding: 273px 25px 30px;
+    position: relative;
+    top: 0;
+    margin-top: -64px;
+  }
+  .about__section .description-text {
+    line-height: 24px;
+  }
+  .about__section .description-text--strong {
+    font-size: 14px;
+  }
+  .feature__section .main-area {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    padding-top: 30px;
+  }
+  .feature__section .item {
+    width: min(800px, 100%);
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .feature__section .top-portion {
+    display: flex;
+    align-items: center;
+    padding: 16px 20px;
+  }
+  .feature__section .point {
+    font-size: 22px;
+  }
+  .feature__section .heading2-text {
+    padding-top: 0;
+    padding-left: 15px;
+    text-align: left;
+    font-size: 16px;
+  }
+  .feature__section .bottom-portion {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 20px;
+  }
+  .feature__section .img {
+    width: min(400px, 100%);
+  }
+  .feature__section .text {
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 0;
+    line-height: 24px;
+    text-align: left;
+  }
+  .staff__section .main-area,
+  .supervise__section .main-area {
+    gap: 30px;
+    padding-top: 30px;
+  }
+  .staff__section .box,
+  .supervise__section .box {
+    width: min(600px, 100%);
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+    flex-direction: column;
+    column-gap: 16px;
+    border-radius: 10px;
+  }
+  .staff__section .img-pc,
+  .supervise__section .img-pc {
+    display: none;
+  }
+  .staff__section .img-sp,
+  .supervise__section .img-sp {
+    display: inline-block;
+    width: min(400px, 100%);
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .staff__section .company,
+  .supervise__section .company {
+    padding-top: 16px;
+    font-size: 14px;
+    text-align: center;
+  }
+  .staff__section .heading2-text,
+  .supervise__section .heading2-text {
+    padding-top: 4px;
+    padding-bottom: 12px;
+    font-size: 14px;
+    text-align: center;
+  }
+  .staff__section .text-large,
+  .supervise__section .text-large {
+    font-size: 18px;
+  }
+  .staff__section .english,
+  .supervise__section .english {
+    font-size: 16px;
+    padding-left: 0;
+    line-height: 20px;
+    display: inline-block;
+    padding-top: 5px;
+  }
+  .staff__section .description,
+  .supervise__section .description {
+    padding-top: 12px;
+    line-height: 24px;
+  }
+  .program__section .text--strong {
+    font-size: 14px;
+  }
+  .program__section .main-area {
+    padding-top: 50px;
+    width: min(600px, 100%);
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .program__section .inner-wrapper {
+    gap: 50px;
+  }
+  .program__section .box {
+    grid-template-columns: 125px auto;
+    grid-template-rows: auto;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  .program__section .img {
+    position: relative;
+    top: -30px;
+    left: -20px;
+    grid-row-end: 2;
+    width: 100%;
+  }
+  .program__section .heading2-item {
+    grid-column-start: 2;
+    padding-top: 0;
+    gap: 20px;
+    flex-direction: row;
+  }
+  .program__section .number {
+    margin-right: 0;
+    text-align: left;
+    font-size: 30px;
+  }
+  .program__section .heading2-portion {
+    margin-right: auto;
+  }
+  .program__section .heading2-text {
+    margin-right: auto;
+    font-size: 16px;
+    line-height: normal;
+  }
+  .program__section .heading2-bottom-text {
+    margin-right: auto;
+    padding-top: 5px;
+    font-size: 14px;
+    line-height: normal;
+  }
+  .program__section .description {
+    padding-top: 10px;
+    margin-right: 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: 12px;
+    line-height: 24px;
+  }
+  .program__section .icon-portion {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    gap: 15px;
+    padding-top: 15px;
+    padding-bottom: 0;
+  }
+  .program__section .line {
+    left: 63px;
+    height: 86%;
+    top: 100px;
+  }
+  .plan__section .main-area {
+    padding-top: 30px;
+  }
+  .plan__section .row-heading {
+    font-size: 16px;
+  }
+  .plan__section .heading-column {
+    font-size: 14px;
+    padding: 10px 0;
+  }
+  .plan__section .heading-column--top {
+    display: none;
+  }
+  .plan__section td {
+    padding: 10px 30px;
+    font-size: 12px;
+  }
+  .plan__section .main-data--heading {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .news__section .comingsoon {
+    padding-top: 30px;
+  }
+  .news__section .comingsoon .img {
+    width: 127px;
+  }
+  .case__section {
+    padding-bottom: 50px;
+  }
+  .case__section .comingsoon {
+    padding-top: 30px;
+  }
+  .case__section .comingsoon .img {
+    width: 127px;
+  }
+  .contact__section {
+    padding-top: 37px;
+    padding-bottom: 30px;
+  }
+  .contact__section .contact__heading-text {
+    padding-right: 7px;
+    padding-left: 7px;
+    font-size: 18px;
+    letter-spacing: 0;
+  }
+  .contact__section .contact__heading--strong {
+    font-size: 22px;
+    letter-spacing: 0;
+  }
+  .contact__section .description {
+    padding: 15px 0;
+    font-size: 12px;
+    line-height: 26px;
+  }
+  .contact__section .contact-button {
+    padding: 11px 34px;
+    font-size: 16px;
+  }
+  .fixed-button {
+    width: 100px;
+    right: 10px;
+    bottom: 10px;
+  }
+  .fixed-button .button-text {
+    color: #fff;
+    font-size: 14px;
+  }
+  .fixed-button .sp-disappear {
+    display: none;
+  }
+  .fixed-button img {
+    width: 23px;
+    margin-bottom: 5px;
+  }
+}
+/* CONTACT_TB */
+/* Smartphone用スタイル */
+/* Common_SP */
+@media (width < 600px) {
+  * {
+    font-size: 12px;
+  }
+  .c_sp-emerge {
+    display: block;
+  }
+  .c_tb-only-disapear {
+    display: block;
+  }
+}
+/* Header_SP */
+@media (width < 600px) {
+  .header {
+    height: 45px;
+  }
+  .header .logo-area {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .header .logo-img {
+    max-height: 22px;
+  }
+  .header .humberger {
+    width: 45px;
+    height: 45px;
+  }
+  .header .humberger__line {
+    top: 23px;
+    width: 28px;
+  }
+  .header .humberger__line:before {
+    top: -10px;
+  }
+  .header .humberger__line:after {
+    top: 10px;
+  }
+  .header .humberger__text {
+    bottom: 8px;
+  }
+  .header .header__nav-area {
+    margin-top: 45px;
+  }
+}
+/* TOP_SP */
+@media (width < 600px) {
+  .firstview__section {
+    padding-top: 45px;
+    padding-bottom: 0;
+  }
+  .firstview__section .container {
+    padding-bottom: 30px;
+  }
+  .firstview__section .topimg--pc {
+    display: none;
+  }
+  .firstview__section .topimg--sp {
+    display: inline-block;
+    width: 100%;
+  }
+  .firstview__section .button-area {
+    top: 112vw;
+  }
+  .firstview__section .button {
+    font-size: 14px;
+    padding-right: 28px;
+    padding-left: 28px;
+  }
+  .firstview__section .button-link {
+    font-size: 16px;
+  }
+  .firstview__section .bottom-text {
+    font-size: 12px;
+    line-height: 1.3em;
+    height: 0;
+    margin-top: 7vw;
+  }
+  .firstview__section .button-area {
+    top: 108vw;
+  }
+  .firstview__section .bottom-text {
+    margin-top: 10px;
+  }
+  .target__section .main-area {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .feature__section .bottom-portion {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .feature__section .text {
+    padding-bottom: 30px;
+  }
+  .staff__section .company,
+  .supervise__section .company {
+    text-align: left;
+  }
+  .staff__section .heading2-text,
+  .supervise__section .heading2-text {
+    text-align: left;
+  }
+  .program__section .heading2-item {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .program__section .number {
+    margin-right: auto;
+  }
+  .plan__section .table-pc {
+    display: none;
+  }
+  .plan__section .table-box-sp {
+    display: grid;
+    gap: 30px;
+    white-space: initial;
+  }
+  .plan__section .heading-column {
+    display: block;
+    width: 100%;
+  }
+  .plan__section th {
+    display: block;
+    width: 100%;
+  }
+  .plan__section td {
+    width: 100%;
+    display: block;
+  }
+  .fixed-button {
+    background-color: #0F6CA9;
+  }
+}
+/* CONTACT_SP */
+@media (width < 600px) {
+  .contactPage__firstview__section {
+    padding-top: 35px;
+    padding-bottom: 5px;
+  }
+  .contactPage__firstview__section .top-heading-text {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 18px;
+  }
+  .contactPage__firstview__section .contact__heading-text {
+    padding-right: 7px;
+    padding-left: 7px;
+    font-size: 18px;
+    letter-spacing: 0;
+  }
+  .contactPage__firstview__section .contact__heading--strong {
+    font-size: 22px;
+    letter-spacing: 0;
+  }
+  .contactPage__firstview__section .description {
+    padding: 15px 0;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .contactPage__form__section {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  .contactPage__form__section .container {
+    width: 84%;
+    max-width: 330px;
+  }
+  .contactPage__form__section form {
+    gap: 20px;
+  }
+  .contactPage__form__section .form-label-box {
+    font-size: 14px;
+  }
+  .contactPage__form__section .form-item .wpcf7-checkbox {
+    display: grid;
+    gap: 10px;
+  }
+  .contactPage__form__section .wpcf7-list-item-label {
+    font-size: 12px;
+  }
+  .contactPage__form__section .form-item .wpcf7-text {
+    min-height: 40px;
+  }
+  .contactPage__form__section #name .wpcf7-text {
+    width: min(100%, 220px);
+  }
+  .contactPage__form__section .form-button p {
+    margin-top: 10px;
+  }
+  .contactPage__form__section .submit-button {
+    font-size: 14px;
+  }
+}
+/* Footer_SP */
+@media (width < 600px) {
+  .footer .container {
+    text-align: center;
+  }
+  .footer .footer-logo {
+    height: 38px;
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .footer .copyright-text {
+    text-align: center;
+    font-size: 14px;
+  }
+  .footer .link-box {
+    justify-content: center;
+    gap: 20px;
+    font-size: 14px;
+  }
+  .footer .link-text {
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
