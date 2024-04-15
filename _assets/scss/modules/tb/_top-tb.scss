@@ -103,7 +103,7 @@
       font-size: $main-font-size;
       padding-right: 38px;
       padding-left: 38px;
-      line-height: 30px;
+      line-height: 26px;
     }
 
     .heading2-text--strong {
@@ -126,6 +126,168 @@
 
     .description-text--strong {
       font-size: $small-font-size;
+    }
+
+    .about-button {
+      padding: 8.5px 20px;
+      font-size: $main-font-size;
+    }
+  }
+
+  .about__section--revise {
+    .button-box {
+      padding-top: 20px;
+    }
+  }
+
+  /* ポップアップ-複業とは */
+
+  .about-popup-block {
+
+    .inner-box {
+      grid-template-columns: 1fr;
+      max-width: 340px;
+      border-radius: 10px;
+    }
+
+    .main-area {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 30px;
+      padding-top: 30px;
+    }
+
+    .main-content {
+      padding: 20px;
+    }
+
+    .img-pc {
+      display: none;
+    }
+
+    .img-sp {
+      display: inherit;
+    }
+
+    .item {
+      width: min(800px, 100%);
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .top-portion {
+      display: flex;
+      align-items: flex-start;
+      padding: 0 0 20px;
+      gap: 5px;
+    }
+
+    .top-text {
+      line-height: 35px;
+      font-size: $main-font-size;
+      padding-right: 10px;
+      padding-left: 10px;
+
+      &--strong {
+        font-size: $large-font-size;
+      }
+    }
+
+    .point {
+      font-size: $large3-font-size;
+    }
+
+    .heading2-text {
+      padding-top: 0;
+      padding-left: 15px;
+      text-align: left;
+      font-size: $main-font-size;
+    }
+
+    .bottom-portion {
+      padding-top: 20px;
+      padding-right: 20px;
+      padding-left: 20px;
+      text-align: center;
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      gap: 20px;
+    }
+
+    .img {
+      width: min(400px, 100%);
+    }
+
+    .text {
+      padding-top: 0;
+      padding-right: 0;
+      padding-left: 0;
+      line-height: 24px;
+      text-align: left;
+    }
+
+    .description-text {
+      line-height: 20px;
+
+      &--strong {
+        font-size: $small-font-size;
+      }
+    }
+
+    .photo-pc {
+      display: none;
+    }
+  }
+
+  //複業職人とは
+  .fukugyoShokunin__section {
+    .main-area {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 30px;
+      padding-top: 30px;
+    }
+
+    .item {
+      width: min(800px, 100%);
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .top-portion {
+      display: flex;
+      align-items: center;
+      padding: 16px 20px;
+      transform: translate(0, 0);
+      border-radius: 10px 10px 0 0;
+    }
+
+    .point {
+      font-size: $large3-font-size;
+    }
+
+    .heading2-text {
+      padding-top: 0;
+      padding-left: 15px;
+      text-align: left;
+      font-size: $main-font-size;
+    }
+
+    .bottom-portion {
+      padding: 20px 21px;
+      text-align: center;
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      gap: 20px;
+      border-radius: 0 0 10px 10px;
+    }
+
+    .img {
+      width: min(400px, 100%);
+    }
+
+    .text {
+      padding: 0;
+      line-height: 24px;
+      text-align: left;
     }
   }
 
@@ -180,6 +342,253 @@
       padding-left: 0;
       line-height: 24px;
       text-align: left;
+    }
+  }
+
+
+  //講師紹介-改修
+  .staffIntroduction__section {
+    .aboutMister-text {
+      padding-top: 5px;
+      font-size: 10px;
+    }
+
+    .main-area {
+      grid-template-columns: 1fr;
+      gap: 30px;
+      padding-top: 20px;
+    }
+
+    .box {
+      width: min(600px, 100%);
+      margin-right: auto;
+      margin-left: auto;
+      padding: 20px;
+      flex-direction: column;
+      column-gap: 16px;
+      border-radius: 10px;
+    }
+
+    .img-pc {}
+
+    .company {
+      padding-top: 16px;
+      font-size: $small-font-size;
+      text-align: center;
+    }
+
+    .heading2-text {
+      padding-top: 4px;
+      padding-bottom: 12px;
+      font-size: $small-font-size;
+      text-align: center;
+    }
+
+    .text-large {
+      font-size: $large-font-size;
+    }
+
+    .english {
+      font-size: $main-font-size;
+      padding-left: 0;
+      line-height: 20px;
+      display: inline-block;
+      padding-top: 5px;
+    }
+
+    .description {
+      padding-top: 12px;
+      line-height: 24px;
+    }
+
+    .x-twitter-icon {
+      width: 30px;
+      line-height: 30px;
+    }
+
+    .profile-button {
+      padding-right: 40px;
+      padding-left: 40px;
+      height: 30px;
+      line-height: 30px;
+      border-radius: 30px;
+    }
+  }
+
+  .staffIntroduction__section {
+    .book-area {
+      grid-template-columns: 1fr;
+      padding-top: 35px;
+      padding-right: 0;
+      padding-left: 0;
+      grid-template-rows: auto;
+      row-gap: 10px;
+
+      .heading-box {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        padding-top: 0;
+        padding-right: 0;
+      }
+
+      .heading-balloon-portion {
+        text-align: center;
+        gap: 0;
+        padding: 7px 60px 12px;
+        width: 280px;
+        max-width: 100%;
+        border-radius: 10px;
+
+        &::before {
+          top: calc(100% - 1px);
+          left: 50%;
+        }
+      }
+
+
+      .heading-top-text {
+        font-size: $small2-font-size;
+        text-shadow: none;
+      }
+
+      .heading-main-text {
+        font-size: $small-font-size;
+      }
+
+      .image-box {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+      }
+
+      .book-image {}
+
+      .book-description-box {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+      }
+
+      .book-description-top-text {
+        font-size: $large-font-size;
+      }
+
+    }
+  }
+
+  /* ポップアップ-講師紹介 */
+  .c_popup-block {
+    .inner-box {
+      max-width: 340px;
+      border-radius: 10px;
+    }
+
+    .box {
+      padding: 20px;
+      flex-direction: column;
+      gap: 15.91px;
+    }
+
+    .img-pc {
+      display: none;
+    }
+
+    .img-sp {
+      display: block;
+    }
+
+    .text-portion {}
+
+    .company {
+      padding-top: 16px;
+      font-size: $small-font-size;
+    }
+
+    .heading2-text {
+      padding-top: 4px;
+      padding-bottom: 12px;
+      font-size: $small-font-size;
+    }
+
+    .text-large {
+      font-size: $large-font-size;
+    }
+
+    .english {
+      font-size: $main-font-size;
+      padding-left: 0;
+      line-height: 20px;
+      display: inline-block;
+      padding-top: 5px;
+    }
+
+    .description {
+      padding-top: 12px;
+      line-height: 24px;
+    }
+  }
+
+  /* 監修 */
+  .supervise__section {
+
+    .main-area {
+      gap: 30px;
+      padding-top: 30px;
+    }
+
+    .box {
+      width: min(600px, 100%);
+      margin-right: auto;
+      margin-left: auto;
+      padding: 20px;
+      flex-direction: column;
+      column-gap: 16px;
+      border-radius: 10px;
+    }
+
+    .img-pc {
+      display: none;
+    }
+
+    .img-sp {
+      display: inline-block;
+      width: min(400px, 100%);
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .company {
+      padding-top: 16px;
+      font-size: $small-font-size;
+      text-align: center;
+    }
+
+    .heading2-text {
+      padding-top: 4px;
+      padding-bottom: 12px;
+      font-size: $small-font-size;
+      text-align: center;
+    }
+
+    .text-large {
+      font-size: $large-font-size;
+    }
+
+    .english {
+      font-size: $main-font-size;
+      padding-left: 0;
+      line-height: 20px;
+      display: inline-block;
+      padding-top: 5px;
+    }
+
+    .description {
+      padding-top: 12px;
+      line-height: 24px;
     }
   }
 
@@ -244,6 +653,73 @@
     }
   }
 
+  .staff__section {
+    .book-area {
+      grid-template-columns: 1fr;
+      padding-top: 35px;
+      padding-right: 0;
+      padding-left: 0;
+      grid-template-rows: auto;
+      row-gap: 10px;
+
+      .heading-box {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        padding-top: 0;
+        padding-right: 0;
+      }
+
+      .heading-balloon-portion {
+        text-align: center;
+        gap: 0;
+        padding: 7px 60px 12px;
+        width: 280px;
+        max-width: 100%;
+        border-radius: 10px;
+
+        &::before {
+          top: calc(100% - 1px);
+          left: 50%;
+        }
+      }
+
+
+      .heading-top-text {
+        font-size: $small2-font-size;
+        text-shadow: none;
+      }
+
+      .heading-main-text {
+        font-size: $main-font-size;
+      }
+
+      .image-box {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+      }
+
+      .book-image {
+        width: 100%;
+      }
+
+      .book-description-box {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+      }
+
+      .book-description-top-text {
+        font-size: $large-font-size;
+      }
+
+    }
+  }
+
   //プログラム
   .program__section {
 
@@ -263,7 +739,7 @@
     }
 
     .box {
-      grid-template-columns: 125px auto;
+      grid-template-columns: 124px auto;
       grid-template-rows: auto;
       border-radius: 10px;
       padding: 20px;
@@ -337,13 +813,18 @@
 
     .main-area {
       padding-top: 30px;
+      overflow: auto;
+    }
+
+    .table-pc {
+      overflow: auto;
     }
 
     .row-heading {
       font-size: $main-font-size;
     }
 
-    .heading-column {
+    .table-box-sp .heading-column {
       font-size: $small-font-size;
       padding: 10px 0;
     }
@@ -352,8 +833,8 @@
       display: none;
     }
 
-    td {
-      padding: 10px 30px;
+    .table-box-sp td {
+      padding: 10px 13px;
       font-size: $small2-font-size;
     }
 
@@ -361,11 +842,45 @@
       font-size: $small-font-size;
       line-height: 24px;
     }
+
+    .portfolio-area {
+      padding-top: 30px;
+
+      .main-box {
+        grid-template-columns: 1fr;
+        gap: 19.34px;
+        padding-top: 15px;
+
+      }
+
+      .portfolio-balooon-text {
+        min-width: 200px;
+        padding: 6px 20px;
+        line-height: 35px;
+        font-size: $main-font-size;
+        border-radius: 10px;
+      }
+
+      .portfolio-image-box {
+        padding-top: 16px;
+      }
+    }
   }
 
   //ニュース
   .news__section {
 
+
+    .item {
+      flex-direction: column;
+      gap: 4px;
+      padding: 15px 0;
+    }
+
+    .date-text {
+      font-size: $small2-font-size;
+    }
+
     .comingsoon {
       padding-top: 30px;
 
@@ -376,9 +891,54 @@
     }
   }
 
+  .news__section--revise {
+    .main-area {
+      padding: 20px 24px;
+    }
+  }
+
   //受講事例
   .case__section {
-    padding-bottom: 50px;
+
+    .main-area {
+      grid-template-columns: 1fr;
+      padding-top: 15px;
+    }
+
+    .description-text {
+      padding: 14px 14px;
+      font-size: $main-font-size;
+      line-height: 24px;
+      border-radius: 10px 10px 0 0;
+    }
+
+    .text-portion {
+      padding: 16.58px 16px 28.09px 27px;
+      position: relative;
+      background-color: #fff;
+      border-radius: 0 0 10px 10px;
+    }
+
+    .description {
+      padding-top: 0;
+    }
+
+    .top-text {
+      gap: 12px;
+      padding-bottom: 13.67px;
+    }
+
+    .number {
+      font-size: 40px;
+    }
+
+    .name {
+      font-size: $large-font-size;
+
+      &--age {
+        font-size: $small-font-size;
+      }
+    }
 
     .comingsoon {
       padding-top: 30px;
@@ -387,6 +947,10 @@
         width: 127px;
       }
     }
+  }
+
+  .case__section--revise {
+    padding-bottom: 0;
   }
 
   //クロージング
@@ -425,7 +989,8 @@
 
     .button-text {
       color: #fff;
-      font-size: $small-font-size;
+      font-size: $small2-font-size;
+      font-weight: normal;
     }
 
     .sp-disappear {

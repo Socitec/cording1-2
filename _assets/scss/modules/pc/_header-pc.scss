@@ -21,8 +21,13 @@
         padding-left: 29px;
     }
 
+    .logo-area {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
     .logo-img {
-        width: 366.79px;
+        height: 45px;
 
     }
 
@@ -32,6 +37,10 @@
         align-items: center;
         flex-direction: row-reverse;
         gap: 35px;
+    }
+
+    .menu-list {
+        font-size: $main-font-size;
     }
 
     .contact-button {

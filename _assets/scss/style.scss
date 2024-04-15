@@ -8,13 +8,15 @@
 @use './modules/pc/top-pc';//Topページ用
 @use './modules/pc/contact-pc';
 @use './modules/pc/footer-pc';
-
+@use './modules/pc/post-page-pc';
+@use './modules/pc/case-pc';//Topページ用
 
 /* Tablet用スタイル */
 @use './modules/tb/common-tb';
 @use './modules/tb/header-tb';
 @use './modules/tb/top-tb';
 @use './modules/tb/contact-tb';
+@use './modules/tb/case-tb';
 
 
 /* Smartphone用スタイル */
@@ -23,3 +25,4 @@
 @use './modules/sp/top-sp';
 @use './modules/sp/contact-sp';
 @use './modules/sp/footer-sp';
+@use './modules/sp/case-sp';

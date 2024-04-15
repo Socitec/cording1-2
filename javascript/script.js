@@ -106,6 +106,32 @@ focusTrap.addEventListener("focus", (e) => {
   humberger.focus();
 });
 
+//ボタンをクリックするとポップアップ表示
+const popupList = [
+  // 順序 [0]クリック対象要素 [1]ポップアップ対象要素 [2]ポップアップを閉じるボタン要素 [3]ポップアップのdisplay
+  ['js_about-button', 'js_about-popup-block', 'js_about-close-button', 'block'],
+  ['js_profile1-button', 'js_profile1-popup-block', 'js_profile1-close-button', 'flex'],
+  ['js_profile1-img', 'js_profile1-popup-block', 'js_profile1-close-button', 'flex'],
+  ['js_profile2-button', 'js_profile2-popup-block', 'js_profile2-close-button', 'flex'],
+  ['js_profile2-img', 'js_profile2-popup-block', 'js_profile2-close-button', 'flex'],
+];
+
+popupList.forEach(function (popupItem) {
+  let clickButton = document.getElementById(popupItem[0]);
+  let popupWrapper = document.getElementById(popupItem[1]);
+  let closeButton = document.getElementById(popupItem[2]);
+
+  clickButton.addEventListener('click', () => {
+    popupWrapper.style.display = 'block';
+  });
+
+  popupWrapper.addEventListener('click', e => {
+    if (e.target.id === popupWrapper.id || e.target.id === closeButton.id) {
+      popupWrapper.style.display = 'none';
+    }
+  });
+});
+
 
 //jQuery記述
 

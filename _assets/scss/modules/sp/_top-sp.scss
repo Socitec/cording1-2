@@ -5,9 +5,7 @@
 @media (width < 1020px) {
 
   //メインビジュアル
-  .firstview__section {
-
-  }
+  .firstview__section {}
 
 
 }
@@ -34,7 +32,7 @@
     }
 
     .button-area {
-      top: 112vw;
+      top: 108.20vw;
     }
 
     .button {
@@ -54,10 +52,6 @@
       margin-top: 7vw;
     }
 
-    .button-area {
-      top: 108vw;
-    }
-
     .bottom-text {
       margin-top: 10px;
     }
@@ -72,6 +66,17 @@
     }
   }
 
+  //複業職人とは
+  .fukugyoShokunin__section {
+
+    .bottom-portion {
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+
+    .text {}
+  }
+
   //特徴
   .feature__section {
 
@@ -82,6 +87,19 @@
 
     .text {
       padding-bottom: 30px;
+    }
+  }
+
+  //講師紹介-改修
+  .staffIntroduction__section,
+  .supervise__section {
+
+    .company {
+      text-align: left;
+    }
+
+    .heading2-text {
+      text-align: left;
     }
   }
 

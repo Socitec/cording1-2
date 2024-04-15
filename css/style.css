@@ -503,6 +503,95 @@ section {
   line-height: 1.6em;
 }
 
+.c_popup-block {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 30;
+  display: none;
+}
+.c_popup-block .inner-box {
+  display: grid;
+  width: 100%;
+  max-width: 1200px;
+  background: #fff;
+  margin: 100px auto 200px;
+  position: relative;
+  border-radius: 20px;
+  position: relative;
+}
+.c_popup-block .close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #fff;
+  width: 30px;
+  aspect-ratio: 1/1;
+  line-height: 30px;
+  background-color: #d9d9d9;
+  border-radius: 30px;
+  text-align: center;
+}
+.c_popup-block .main-area {
+  display: grid;
+  gap: 50px;
+  padding-top: 60px;
+}
+.c_popup-block .box {
+  background-color: #fff;
+  padding: 30px 55px 30px 35px;
+  display: flex;
+  column-gap: 50px;
+  border-radius: 20px;
+  max-height: calc(100vh - 70px - 120px);
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.c_popup-block .box::-webkit-scrollbar {
+  display: none;
+}
+.c_popup-block .img-pc {
+  width: 380px;
+  height: 520px;
+}
+.c_popup-block .img-sp {
+  display: none;
+}
+.c_popup-block .company {
+  font-size: 18px;
+  font-weight: 700;
+}
+.c_popup-block .heading2-text {
+  padding-top: 5px;
+  padding-bottom: 22px;
+  font-size: 18px;
+  font-weight: 700;
+  border-bottom: 1px solid #DFDFDF;
+}
+.c_popup-block .text-large {
+  font-size: 26px;
+  font-weight: 700;
+}
+.c_popup-block .english {
+  padding-left: 20px;
+  color: #FFD362;
+  font-size: 24px;
+  font-family: "Caveat", cursive;
+  font-weight: 700;
+}
+.c_popup-block .description {
+  padding-top: 24px;
+  line-height: 28px;
+}
+.c_popup-block .link {
+  color: #036EB7;
+  text-decoration: underline;
+}
+
 .c_tb-emerge {
   display: none;
 }
@@ -534,8 +623,12 @@ section {
   padding-right: 29px;
   padding-left: 29px;
 }
+.header .logo-area {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .header .logo-img {
-  width: 366.79px;
+  height: 45px;
 }
 .header .menu-area {
   display: flex;
@@ -543,6 +636,9 @@ section {
   align-items: center;
   flex-direction: row-reverse;
   gap: 35px;
+}
+.header .menu-list {
+  font-size: 16px;
 }
 .header .contact-button {
   padding-right: 30px;
@@ -586,7 +682,7 @@ section {
 }
 .firstview__section .button-area {
   position: absolute;
-  top: 35vw;
+  top: 37.29vw;
   width: 100%;
   text-align: center;
 }
@@ -611,6 +707,11 @@ section {
   font-size: 14px;
   font-weight: 700;
   line-height: 23px;
+}
+
+.firstview__section--revise {
+  padding-bottom: 70px;
+  background-color: rgba(255, 211, 98, 0.1);
 }
 
 /* こんな人におすすめ */
@@ -666,17 +767,23 @@ section {
 .about__section .photo-sp {
   display: none;
 }
+.about__section .heading-box {
+  display: flex;
+  justify-content: center;
+}
 .about__section .heading2-box {
   padding-left: 82px;
   padding-bottom: 20px;
 }
 .about__section .heading2-text {
-  padding: 19px 43px;
+  padding: 16px 47px;
   position: relative;
+  text-align: center;
   display: inline-block;
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 2.6px;
+  line-height: 54px;
 }
 .about__section .heading2-text::before,
 .about__section .heading2-text::after {
@@ -705,6 +812,18 @@ section {
   padding-right: 0.1em;
   padding-left: 0.1em;
 }
+.about__section .button-box {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.about__section .about-button {
+  background-color: #F19B12;
+  color: #fff;
+  padding: 14px 50px;
+  border-radius: 30px;
+  font-size: 22px;
+}
 .about__section .description-box {
   max-width: 981px;
   border-radius: 20px;
@@ -717,6 +836,10 @@ section {
   padding-bottom: 15px;
   text-align: left;
 }
+.about__section .description-text--number {
+  color: #F29C14;
+  font-weight: 700;
+}
 .about__section .description-text--strong {
   font-size: 18px;
   font-weight: 700;
@@ -726,6 +849,139 @@ section {
   text-align: right;
   color: #F29C14;
   font-weight: 700;
+}
+
+.about__section--revise {
+  padding-top: 0;
+}
+.about__section--revise .main-area {
+  padding-top: 0;
+}
+
+/* 複業職人とは */
+.fukugyoShokunin__section {
+  background-color: #F8FDFF;
+}
+.fukugyoShokunin__section .main-area {
+  display: grid;
+  gap: 90px;
+  padding-top: 100px;
+}
+.fukugyoShokunin__section .item {
+  border-radius: 20px;
+  background-color: #fff;
+}
+.fukugyoShokunin__section .top-portion {
+  display: inline-flex;
+  gap: 30px;
+  background-color: #FFD362;
+  text-align: center;
+  padding: 18px 35px 19px 42px;
+  transform: translate(-32px, -40px);
+  border-radius: 20px;
+}
+.fukugyoShokunin__section .point {
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 33px;
+  font-family: "Caveat", cursive;
+  font-weight: 700;
+}
+.fukugyoShokunin__section .heading2-text {
+  padding-top: 8px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4em;
+}
+.fukugyoShokunin__section .bottom-portion {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  padding: 5px 52px 53px 48px;
+}
+.fukugyoShokunin__section .img {
+  width: 435px;
+}
+.fukugyoShokunin__section .text {
+  line-height: 28px;
+}
+.fukugyoShokunin__section .text--strong {
+  color: #E7961F;
+}
+
+/* ポップアップ-複業とは */
+.about-popup-block .inner-box {
+  grid-template-columns: 1fr 375px;
+}
+.about-popup-block .close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #fff;
+  width: 30px;
+  aspect-ratio: 1/1;
+  line-height: 30px;
+  background-color: #d9d9d9;
+  border-radius: 30px;
+  text-align: center;
+}
+.about-popup-block .main-content {
+  padding: 36px 15px 36px 44px;
+  max-height: calc(100vh - 70px - 120px);
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.about-popup-block .main-content::-webkit-scrollbar {
+  display: none;
+}
+.about-popup-block .top-portion {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.about-popup-block .top-text {
+  width: fit-content;
+  line-height: 40px;
+  background-color: #F19B12;
+  color: #fff;
+  font-size: 20px;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+.about-popup-block .top-text--strong {
+  font-size: 28px;
+  color: #fff;
+}
+.about-popup-block .description-box {
+  padding-top: 15px;
+  max-width: 981px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+.about-popup-block .description-text {
+  line-height: 34px;
+  padding-bottom: 15px;
+  text-align: left;
+}
+.about-popup-block .description-text--number {
+  color: #F29C14;
+  font-weight: 700;
+}
+.about-popup-block .description-text--strong {
+  font-size: 18px;
+  font-weight: 700;
+  background: linear-gradient(transparent 80%, #ffe39a 80%);
+}
+.about-popup-block .author-text {
+  color: #F29C14;
+  font-weight: 700;
+}
+.about-popup-block .photo-pc {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50%;
+  border-radius: 0 20px 20px 0;
 }
 
 /* 特徴 */
@@ -771,17 +1027,110 @@ section {
 }
 
 /* 講師紹介 */
-.staff__section,
-.supervise__section {
+.staffIntroduction__section {
   background-color: rgba(255, 211, 98, 0.1);
 }
-.staff__section .main-area,
+.staffIntroduction__section .aboutMister-text {
+  text-align: center;
+  padding-top: 10px;
+}
+.staffIntroduction__section .main-area {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  padding-top: 58px;
+}
+.staffIntroduction__section .box {
+  background-color: #fff;
+  padding: 30px 35px 31px;
+  display: grid;
+  gap: 26px;
+  border-radius: 20px;
+}
+.staffIntroduction__section .img-pc {
+  width: 100%;
+  cursor: pointer;
+}
+.staffIntroduction__section .company {
+  font-size: 18px;
+  font-weight: 700;
+}
+.staffIntroduction__section .heading2-text {
+  padding-top: 5px;
+  padding-bottom: 16px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.staffIntroduction__section .text-large {
+  font-size: 26px;
+  font-weight: 700;
+}
+.staffIntroduction__section .english {
+  padding-left: 20px;
+  color: #FFD362;
+  font-size: 24px;
+  font-family: "Caveat", cursive;
+  font-weight: 700;
+}
+.staffIntroduction__section .button-parts {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 18px;
+}
+.staffIntroduction__section .x-twitter-icon {
+  color: #fff;
+  background-color: #000;
+  width: 40px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+}
+.staffIntroduction__section .profile-button {
+  padding-right: 54px;
+  padding-left: 54px;
+  background-color: #F19B12;
+  color: #fff;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 30px;
+}
+.staffIntroduction__section .link {
+  color: #036EB7;
+  text-decoration: underline;
+}
+.staffIntroduction__section .book-area {
+  padding-top: 40px;
+}
+.staffIntroduction__section .book-area .heading-main-text {
+  text-align: center;
+  color: #30C1FF;
+  font-size: 30px;
+  font-weight: bold;
+}
+.staffIntroduction__section .book-area .image-box {
+  text-align: center;
+  padding-top: 20px;
+}
+.staffIntroduction__section .book-area .book-image {
+  width: 650px;
+  max-width: 100%;
+}
+
+.staffIntroduction__section {
+  background-color: #F8FDFF;
+}
+
+/* 監修 */
+.supervise__section {
+  background-color: #F8FDFF;
+}
 .supervise__section .main-area {
   display: grid;
   gap: 50px;
   padding-top: 60px;
 }
-.staff__section .box,
 .supervise__section .box {
   background-color: #fff;
   padding: 30px 55px 30px 35px;
@@ -789,22 +1138,18 @@ section {
   column-gap: 50px;
   border-radius: 20px;
 }
-.staff__section .img-pc,
 .supervise__section .img-pc {
   width: 380px;
-  height: min-content;
+  height: 520px;
 }
-.staff__section .img-sp,
 .supervise__section .img-sp {
   display: none;
 }
-.staff__section .company,
 .supervise__section .company {
   padding-top: 21px;
   font-size: 18px;
   font-weight: 700;
 }
-.staff__section .heading2-text,
 .supervise__section .heading2-text {
   padding-top: 5px;
   padding-bottom: 22px;
@@ -812,12 +1157,10 @@ section {
   font-weight: 700;
   border-bottom: 1px solid #DFDFDF;
 }
-.staff__section .text-large,
 .supervise__section .text-large {
   font-size: 26px;
   font-weight: 700;
 }
-.staff__section .english,
 .supervise__section .english {
   padding-left: 20px;
   color: #FFD362;
@@ -825,15 +1168,144 @@ section {
   font-family: "Caveat", cursive;
   font-weight: 700;
 }
-.staff__section .description,
 .supervise__section .description {
   padding-top: 24px;
   line-height: 28px;
 }
-.staff__section .link,
 .supervise__section .link {
   color: #036EB7;
   text-decoration: underline;
+}
+
+/* 後で削除 */
+/* 講師紹介 */
+.staff__section {
+  background-color: rgba(255, 211, 98, 0.1);
+}
+.staff__section .main-area {
+  display: grid;
+  gap: 50px;
+  padding-top: 60px;
+}
+.staff__section .box {
+  background-color: #fff;
+  padding: 30px 55px 30px 35px;
+  display: flex;
+  column-gap: 50px;
+  border-radius: 20px;
+}
+.staff__section .img-pc {
+  width: 380px;
+  height: 520px;
+}
+.staff__section .img-sp {
+  display: none;
+}
+.staff__section .company {
+  padding-top: 21px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.staff__section .heading2-text {
+  padding-top: 5px;
+  padding-bottom: 22px;
+  font-size: 18px;
+  font-weight: 700;
+  border-bottom: 1px solid #DFDFDF;
+}
+.staff__section .text-large {
+  font-size: 26px;
+  font-weight: 700;
+}
+.staff__section .english {
+  padding-left: 20px;
+  color: #FFD362;
+  font-size: 24px;
+  font-family: "Caveat", cursive;
+  font-weight: 700;
+}
+.staff__section .description {
+  padding-top: 24px;
+  line-height: 28px;
+}
+.staff__section .link {
+  color: #036EB7;
+  text-decoration: underline;
+}
+
+.staff__section {
+  background-color: #F8FDFF;
+}
+.staff__section .book-area {
+  display: grid;
+  grid-template-columns: 1fr 600px;
+  padding-top: 59px;
+  padding-right: 55px;
+  padding-left: 35px;
+  grid-template-rows: auto 1fr;
+  row-gap: 29px;
+}
+.staff__section .book-area .heading-box {
+  position: relative;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding-top: 34px;
+  padding-right: 60px;
+}
+.staff__section .book-area .heading-balloon-portion {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 21px 30px 19px;
+  width: 450px;
+  max-width: 100%;
+  background: #FFD362;
+  border-radius: 20px;
+}
+.staff__section .book-area .heading-balloon-portion::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(100% - 1px);
+  margin-top: -16px;
+  border: 16px solid transparent;
+  border-left: 16px solid #FFD362;
+}
+.staff__section .book-area .heading-top-text {
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+  -webkit-text-stroke: 1px #000;
+  text-stroke: 1px #000;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.staff__section .book-area .heading-main-text {
+  font-size: 30px;
+}
+.staff__section .book-area .image-box {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.staff__section .book-area .book-image {
+  width: 100%;
+}
+.staff__section .book-area .book-description-box {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.staff__section .book-area .book-description-top-text {
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .supervise__section {
@@ -842,7 +1314,7 @@ section {
 
 /* プログラム　*/
 .program__section {
-  background-color: #F8FDFF;
+  background-color: rgba(255, 211, 98, 0.1);
 }
 .program__section .text--strong {
   font-size: 24px;
@@ -942,11 +1414,30 @@ section {
 }
 .plan__section .main-area {
   padding-top: 60px;
-  overflow-x: scroll;
+  overflow: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.plan__section .main-area::-webkit-scrollbar {
+  display: none;
+}
+.plan__section .table-pc {
+  border: 0.5px solid #DFDFDF;
 }
 .plan__section .table-pc,
 .plan__section .table-box-sp {
   white-space: nowrap;
+  overflow: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.plan__section .table-pc::-webkit-scrollbar,
+.plan__section .table-box-sp::-webkit-scrollbar {
+  display: none;
+}
+.plan__section .table-pc .table,
+.plan__section .table-box-sp .table {
+  overflow: hidden;
   border: 0.5px solid #DFDFDF;
 }
 .plan__section .table-pc th,
@@ -1024,6 +1515,57 @@ section {
 .plan__section .table-box-sp {
   display: none;
 }
+.plan__section .portfolio-area {
+  padding-top: 80px;
+}
+.plan__section .portfolio-area .main-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 95px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 35px;
+}
+.plan__section .portfolio-area .portfolio-balloon-box {
+  display: flex;
+  justify-content: center;
+}
+.plan__section .portfolio-area .portfolio-balooon-text {
+  position: relative;
+  text-align: center;
+  gap: 17px;
+  padding: 12px 37px;
+  background: #FFD362;
+  border-radius: 20px;
+  font-size: 26px;
+  line-height: 34.5px;
+  min-width: 450px;
+}
+.plan__section .portfolio-area .portfolio-balooon-text::before {
+  content: "";
+  position: absolute;
+  top: calc(100% - 1px);
+  left: 50%;
+  margin-left: -16px;
+  border: 16px solid transparent;
+  border-top: 16px solid #FFD362;
+  font-weight: bold;
+}
+.plan__section .portfolio-area .portfolio-balloon {
+  font-size: 30px;
+  font-weight: bold;
+}
+.plan__section .portfolio-area .portfolio-image-box {
+  padding-top: 50.32px;
+  text-align: center;
+}
+.plan__section .portfolio-area .portfolio-img {
+  width: 783.2px;
+  max-width: 100%;
+}
+.plan__section .supplyment-area {
+  padding-top: 30.01px;
+}
 .plan__section .supplyment {
   padding-top: 10px;
   font-size: 14px;
@@ -1035,6 +1577,22 @@ section {
 .news__section {
   background-color: #F8FDFF;
 }
+.news__section .item {
+  display: flex;
+  padding: 25px 20px;
+}
+.news__section .item:not(:first-child) {
+  border-top: 1px solid #DFDFDF;
+}
+.news__section .date-text {
+  width: 139px;
+  color: #30C1FF;
+  font-size: 18px;
+  font-weight: bold;
+}
+.news__section .link {
+  text-decoration: underline;
+}
 .news__section .comingsoon {
   padding-top: 60px;
   text-align: center;
@@ -1043,9 +1601,106 @@ section {
   width: 211px;
 }
 
+.news__section--revise .main-area {
+  background-color: #fff;
+  padding: 25px 50px;
+  border-radius: 20px;
+}
+
 /* 受講事例 */
 .case__section {
   background-color: #F8FDFF;
+}
+.case__section .main-area {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding-top: 35px;
+}
+.case__section .item-box {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  max-width: 380px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.case__section .image-portion {
+  border-radius: 20px 20px 0 0;
+  background-color: #fff;
+}
+.case__section .description-text {
+  border-radius: 20px 20px 0 0;
+  padding: 20px 18px;
+  background-color: #FFE39A;
+  color: #FF833E;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 31px;
+  text-align: center;
+  position: relative;
+}
+.case__section .description-text::before {
+  content: "";
+  position: absolute;
+  top: calc(100% - 1px);
+  left: 50%;
+  margin-left: -16px;
+  border: 16px solid transparent;
+  border-top: 16px solid #FFE39A;
+  font-weight: bold;
+}
+.case__section .number {
+  font-size: 50px;
+  color: #FF833E;
+}
+.case__section .number--sp {
+  display: none;
+}
+.case__section .img-pc {
+  width: 100%;
+  height: 239px;
+  object-fit: cover;
+  object-position: 50% 0%;
+}
+.case__section .img-sp {
+  display: none;
+  width: 100%;
+}
+.case__section .text-portion {
+  padding: 21px 19px 38px 28px;
+  position: relative;
+  background-color: #fff;
+}
+.case__section .top-text {
+  padding-bottom: 20px;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.case__section .name {
+  font-size: 20px;
+  font-weight: bold;
+}
+.case__section .name--age {
+  font-size: 16px;
+}
+.case__section .career {
+  font-weight: bold;
+}
+.case__section .description {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.case__section .button-block {
+  position: relative;
+}
+.case__section .read-button {
+  background-color: #FF833E;
+  color: #fff;
+  border-radius: 40px;
+  padding: 6px 21px;
 }
 .case__section .comingsoon {
   padding-top: 60px;
@@ -1053,6 +1708,26 @@ section {
 }
 .case__section .img {
   width: 211px;
+}
+
+/* 紹介動画 */
+.movie__section {
+  padding-bottom: 99px;
+  background-color: rgba(255, 211, 98, 0.1);
+}
+.movie__section .main-area {
+  padding-top: 50px;
+}
+.movie__section .movie-box {
+  width: 560px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  aspect-ratio: 560/315;
+}
+.movie__section .movie-box iframe {
+  max-width: 100%;
+  height: 100%;
 }
 
 /* クロージング */
@@ -1277,6 +1952,7 @@ section {
   display: flex;
   gap: 25px;
   padding-top: 21px;
+  flex-wrap: wrap;
 }
 .footer .link {
   text-decoration: underline;
@@ -1289,6 +1965,190 @@ section {
   text-align: right;
   font-size: 18px;
   line-height: 22px;
+}
+
+/* Post Page_PC */
+.postPage__main__section {
+  padding-top: 180px;
+  padding-bottom: 90px;
+  font-family: "Jost", sans-serif;
+  font-family: "Noto Sans", "Noto Sans JP", sans-serif;
+  background-color: #F8FDFF;
+}
+.postPage__main__section .heading-area {
+  padding-bottom: 30px;
+}
+.postPage__main__section .main-heading-text {
+  font-size: 26px;
+}
+.postPage__main__section .main-area h3 {
+  padding: 17px 22px;
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+.postPage__main__section .main-area h3 strong {
+  color: #fff;
+  font-weight: bold;
+}
+.postPage__main__section .main-area p {
+  padding: 17px 22px 24px;
+  font-size: 18px;
+}
+
+/* Caseページ */
+/* 受講事例 */
+.case-page {
+  padding-top: 90px;
+}
+.case-page .main__section {
+  background-color: #F8FDFF;
+}
+.case-page .main__section .casePage-heading-icon-area {
+  margin-bottom: 35px;
+}
+.case-page .main__section .main-area {
+  background-color: #fff;
+  padding: 60px 70px 70px;
+  border-radius: 20px;
+}
+.case-page .main__section .sub-heading-text {
+  text-align: center;
+  color: #FF833E;
+  font-size: 30px;
+  line-height: 45px;
+}
+.case-page .main__section .center-wrap {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 40px;
+  padding-top: 48px;
+}
+.case-page .main__section .top-text {
+  display: flex;
+  padding-bottom: 16px;
+}
+.case-page .main__section .case-text {
+  font-size: 30px;
+  color: #FFD362;
+  font-family: "Caveat", cursive;
+}
+.case-page .main__section .image-portion {
+  display: flex;
+  flex-direction: column;
+}
+.case-page .main__section .number {
+  font-size: 55px;
+  color: #FF833E;
+  margin-left: 9px;
+}
+.case-page .main__section .number--sp {
+  display: none;
+}
+.case-page .main__section .img-pc {
+  width: 100%;
+  height: 239px;
+  object-fit: cover;
+  object-position: 50% 0%;
+}
+.case-page .main__section .img-sp {
+  display: none;
+  width: 100%;
+}
+.case-page .main__section .text-portion {
+  position: relative;
+  background-color: #fff;
+}
+.case-page .main__section .top-text {
+  padding-bottom: 20px;
+  display: flex;
+  align-items: end;
+}
+.case-page .main__section .name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 12px;
+}
+.case-page .main__section .career {
+  padding-top: 21px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #dfdfdf;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+.case-page .main__section .career--strong {
+  color: #FF833E;
+  font-size: 20px;
+  font-weight: bold;
+}
+.case-page .main__section .description {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.case-page .main__section .description-text {
+  padding-top: 20px;
+  line-height: 24px;
+  font-size: 16px;
+}
+.case-page .main__section .button-block {
+  position: relative;
+}
+.case-page .main__section .read-button {
+  background-color: #FF833E;
+  color: #fff;
+  border-radius: 40px;
+  padding: 6px 21px;
+}
+.case-page .main__section .comingsoon {
+  padding-top: 60px;
+  text-align: center;
+}
+.case-page .main__section .img {
+  width: 211px;
+}
+.case-page .main__section .questions-box {
+  display: grid;
+  gap: 30px;
+}
+.case-page .main__section .question-item {
+  display: grid;
+  gap: 20px;
+}
+.case-page .main__section .question-portion {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  background-color: #FFE39A;
+  border-radius: 30px;
+  padding: 7px 22px;
+}
+.case-page .main__section .q-icon {
+  color: #fff;
+  font-size: 18px;
+}
+.case-page .main__section .question-text {
+  color: #FF833E;
+  font-size: 18px;
+}
+.case-page .main__section .answer-portion {
+  display: flex;
+  gap: 10px;
+  padding-left: 15px;
+}
+.case-page .main__section .a-icon {
+  background-color: #FF833E;
+  color: #fff;
+  font-weight: bold;
+  line-height: 25px;
+  width: 25px;
+  border-radius: 25px;
+  text-align: center;
+}
+.case-page .main__section .answer-text {
+  font-size: 14px;
+  line-height: 24px;
 }
 
 /* Tablet用スタイル */
@@ -1315,6 +2175,10 @@ section {
   }
   .c_subheading-text {
     font-size: 12px;
+  }
+  .c_popup-block .inner-box {
+    margin: 70px auto 150px;
+    border-radius: 15px;
   }
   .c_tb-emerge {
     display: block;
@@ -1599,7 +2463,7 @@ section {
     font-size: 16px;
     padding-right: 38px;
     padding-left: 38px;
-    line-height: 30px;
+    line-height: 26px;
   }
   .about__section .heading2-text--strong {
     font-size: 22px;
@@ -1616,6 +2480,132 @@ section {
   }
   .about__section .description-text--strong {
     font-size: 14px;
+  }
+  .about__section .about-button {
+    padding: 8.5px 20px;
+    font-size: 16px;
+  }
+  .about__section--revise .button-box {
+    padding-top: 20px;
+  }
+  /* ポップアップ-複業とは */
+  .about-popup-block .inner-box {
+    grid-template-columns: 1fr;
+    max-width: 340px;
+    border-radius: 10px;
+  }
+  .about-popup-block .main-area {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    padding-top: 30px;
+  }
+  .about-popup-block .main-content {
+    padding: 20px;
+  }
+  .about-popup-block .img-pc {
+    display: none;
+  }
+  .about-popup-block .img-sp {
+    display: inherit;
+  }
+  .about-popup-block .item {
+    width: min(800px, 100%);
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .about-popup-block .top-portion {
+    display: flex;
+    align-items: flex-start;
+    padding: 0 0 20px;
+    gap: 5px;
+  }
+  .about-popup-block .top-text {
+    line-height: 35px;
+    font-size: 16px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .about-popup-block .top-text--strong {
+    font-size: 18px;
+  }
+  .about-popup-block .point {
+    font-size: 22px;
+  }
+  .about-popup-block .heading2-text {
+    padding-top: 0;
+    padding-left: 15px;
+    text-align: left;
+    font-size: 16px;
+  }
+  .about-popup-block .bottom-portion {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 20px;
+  }
+  .about-popup-block .img {
+    width: min(400px, 100%);
+  }
+  .about-popup-block .text {
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 0;
+    line-height: 24px;
+    text-align: left;
+  }
+  .about-popup-block .description-text {
+    line-height: 20px;
+  }
+  .about-popup-block .description-text--strong {
+    font-size: 14px;
+  }
+  .about-popup-block .photo-pc {
+    display: none;
+  }
+  .fukugyoShokunin__section .main-area {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    padding-top: 30px;
+  }
+  .fukugyoShokunin__section .item {
+    width: min(800px, 100%);
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .fukugyoShokunin__section .top-portion {
+    display: flex;
+    align-items: center;
+    padding: 16px 20px;
+    transform: translate(0, 0);
+    border-radius: 10px 10px 0 0;
+  }
+  .fukugyoShokunin__section .point {
+    font-size: 22px;
+  }
+  .fukugyoShokunin__section .heading2-text {
+    padding-top: 0;
+    padding-left: 15px;
+    text-align: left;
+    font-size: 16px;
+  }
+  .fukugyoShokunin__section .bottom-portion {
+    padding: 20px 21px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 20px;
+    border-radius: 0 0 10px 10px;
+  }
+  .fukugyoShokunin__section .img {
+    width: min(400px, 100%);
+  }
+  .fukugyoShokunin__section .text {
+    padding: 0;
+    line-height: 24px;
+    text-align: left;
   }
   .feature__section .main-area {
     grid-template-columns: repeat(1, 1fr);
@@ -1659,6 +2649,197 @@ section {
     padding-left: 0;
     line-height: 24px;
     text-align: left;
+  }
+  .staffIntroduction__section .aboutMister-text {
+    padding-top: 5px;
+    font-size: 10px;
+  }
+  .staffIntroduction__section .main-area {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding-top: 20px;
+  }
+  .staffIntroduction__section .box {
+    width: min(600px, 100%);
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+    flex-direction: column;
+    column-gap: 16px;
+    border-radius: 10px;
+  }
+  .staffIntroduction__section .company {
+    padding-top: 16px;
+    font-size: 14px;
+    text-align: center;
+  }
+  .staffIntroduction__section .heading2-text {
+    padding-top: 4px;
+    padding-bottom: 12px;
+    font-size: 14px;
+    text-align: center;
+  }
+  .staffIntroduction__section .text-large {
+    font-size: 18px;
+  }
+  .staffIntroduction__section .english {
+    font-size: 16px;
+    padding-left: 0;
+    line-height: 20px;
+    display: inline-block;
+    padding-top: 5px;
+  }
+  .staffIntroduction__section .description {
+    padding-top: 12px;
+    line-height: 24px;
+  }
+  .staffIntroduction__section .x-twitter-icon {
+    width: 30px;
+    line-height: 30px;
+  }
+  .staffIntroduction__section .profile-button {
+    padding-right: 40px;
+    padding-left: 40px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 30px;
+  }
+  .staffIntroduction__section .book-area {
+    grid-template-columns: 1fr;
+    padding-top: 35px;
+    padding-right: 0;
+    padding-left: 0;
+    grid-template-rows: auto;
+    row-gap: 10px;
+  }
+  .staffIntroduction__section .book-area .heading-box {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding-top: 0;
+    padding-right: 0;
+  }
+  .staffIntroduction__section .book-area .heading-balloon-portion {
+    text-align: center;
+    gap: 0;
+    padding: 7px 60px 12px;
+    width: 280px;
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  .staffIntroduction__section .book-area .heading-balloon-portion::before {
+    top: calc(100% - 1px);
+    left: 50%;
+  }
+  .staffIntroduction__section .book-area .heading-top-text {
+    font-size: 12px;
+    text-shadow: none;
+  }
+  .staffIntroduction__section .book-area .heading-main-text {
+    font-size: 14px;
+  }
+  .staffIntroduction__section .book-area .image-box {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .staffIntroduction__section .book-area .book-description-box {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .staffIntroduction__section .book-area .book-description-top-text {
+    font-size: 18px;
+  }
+  /* ポップアップ-講師紹介 */
+  .c_popup-block .inner-box {
+    max-width: 340px;
+    border-radius: 10px;
+  }
+  .c_popup-block .box {
+    padding: 20px;
+    flex-direction: column;
+    gap: 15.91px;
+  }
+  .c_popup-block .img-pc {
+    display: none;
+  }
+  .c_popup-block .img-sp {
+    display: block;
+  }
+  .c_popup-block .company {
+    padding-top: 16px;
+    font-size: 14px;
+  }
+  .c_popup-block .heading2-text {
+    padding-top: 4px;
+    padding-bottom: 12px;
+    font-size: 14px;
+  }
+  .c_popup-block .text-large {
+    font-size: 18px;
+  }
+  .c_popup-block .english {
+    font-size: 16px;
+    padding-left: 0;
+    line-height: 20px;
+    display: inline-block;
+    padding-top: 5px;
+  }
+  .c_popup-block .description {
+    padding-top: 12px;
+    line-height: 24px;
+  }
+  /* 監修 */
+  .supervise__section .main-area {
+    gap: 30px;
+    padding-top: 30px;
+  }
+  .supervise__section .box {
+    width: min(600px, 100%);
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+    flex-direction: column;
+    column-gap: 16px;
+    border-radius: 10px;
+  }
+  .supervise__section .img-pc {
+    display: none;
+  }
+  .supervise__section .img-sp {
+    display: inline-block;
+    width: min(400px, 100%);
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .supervise__section .company {
+    padding-top: 16px;
+    font-size: 14px;
+    text-align: center;
+  }
+  .supervise__section .heading2-text {
+    padding-top: 4px;
+    padding-bottom: 12px;
+    font-size: 14px;
+    text-align: center;
+  }
+  .supervise__section .text-large {
+    font-size: 18px;
+  }
+  .supervise__section .english {
+    font-size: 16px;
+    padding-left: 0;
+    line-height: 20px;
+    display: inline-block;
+    padding-top: 5px;
+  }
+  .supervise__section .description {
+    padding-top: 12px;
+    line-height: 24px;
   }
   .staff__section .main-area,
   .supervise__section .main-area {
@@ -1716,6 +2897,59 @@ section {
     padding-top: 12px;
     line-height: 24px;
   }
+  .staff__section .book-area {
+    grid-template-columns: 1fr;
+    padding-top: 35px;
+    padding-right: 0;
+    padding-left: 0;
+    grid-template-rows: auto;
+    row-gap: 10px;
+  }
+  .staff__section .book-area .heading-box {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding-top: 0;
+    padding-right: 0;
+  }
+  .staff__section .book-area .heading-balloon-portion {
+    text-align: center;
+    gap: 0;
+    padding: 7px 60px 12px;
+    width: 280px;
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  .staff__section .book-area .heading-balloon-portion::before {
+    top: calc(100% - 1px);
+    left: 50%;
+  }
+  .staff__section .book-area .heading-top-text {
+    font-size: 12px;
+    text-shadow: none;
+  }
+  .staff__section .book-area .heading-main-text {
+    font-size: 16px;
+  }
+  .staff__section .book-area .image-box {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .staff__section .book-area .book-image {
+    width: 100%;
+  }
+  .staff__section .book-area .book-description-box {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .staff__section .book-area .book-description-top-text {
+    font-size: 18px;
+  }
   .program__section .text--strong {
     font-size: 14px;
   }
@@ -1729,7 +2963,7 @@ section {
     gap: 50px;
   }
   .program__section .box {
-    grid-template-columns: 125px auto;
+    grid-template-columns: 124px auto;
     grid-template-rows: auto;
     border-radius: 10px;
     padding: 20px;
@@ -1788,24 +3022,54 @@ section {
   }
   .plan__section .main-area {
     padding-top: 30px;
+    overflow: auto;
+  }
+  .plan__section .table-pc {
+    overflow: auto;
   }
   .plan__section .row-heading {
     font-size: 16px;
   }
-  .plan__section .heading-column {
+  .plan__section .table-box-sp .heading-column {
     font-size: 14px;
     padding: 10px 0;
   }
   .plan__section .heading-column--top {
     display: none;
   }
-  .plan__section td {
-    padding: 10px 30px;
+  .plan__section .table-box-sp td {
+    padding: 10px 13px;
     font-size: 12px;
   }
   .plan__section .main-data--heading {
     font-size: 14px;
     line-height: 24px;
+  }
+  .plan__section .portfolio-area {
+    padding-top: 30px;
+  }
+  .plan__section .portfolio-area .main-box {
+    grid-template-columns: 1fr;
+    gap: 19.34px;
+    padding-top: 15px;
+  }
+  .plan__section .portfolio-area .portfolio-balooon-text {
+    min-width: 200px;
+    padding: 6px 20px;
+    line-height: 35px;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+  .plan__section .portfolio-area .portfolio-image-box {
+    padding-top: 16px;
+  }
+  .news__section .item {
+    flex-direction: column;
+    gap: 4px;
+    padding: 15px 0;
+  }
+  .news__section .date-text {
+    font-size: 12px;
   }
   .news__section .comingsoon {
     padding-top: 30px;
@@ -1813,14 +3077,49 @@ section {
   .news__section .comingsoon .img {
     width: 127px;
   }
-  .case__section {
-    padding-bottom: 50px;
+  .news__section--revise .main-area {
+    padding: 20px 24px;
+  }
+  .case__section .main-area {
+    grid-template-columns: 1fr;
+    padding-top: 15px;
+  }
+  .case__section .description-text {
+    padding: 14px 14px;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 10px 10px 0 0;
+  }
+  .case__section .text-portion {
+    padding: 16.58px 16px 28.09px 27px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 0 0 10px 10px;
+  }
+  .case__section .description {
+    padding-top: 0;
+  }
+  .case__section .top-text {
+    gap: 12px;
+    padding-bottom: 13.67px;
+  }
+  .case__section .number {
+    font-size: 40px;
+  }
+  .case__section .name {
+    font-size: 18px;
+  }
+  .case__section .name--age {
+    font-size: 14px;
   }
   .case__section .comingsoon {
     padding-top: 30px;
   }
   .case__section .comingsoon .img {
     width: 127px;
+  }
+  .case__section--revise {
+    padding-bottom: 0;
   }
   .contact__section {
     padding-top: 37px;
@@ -1852,7 +3151,8 @@ section {
   }
   .fixed-button .button-text {
     color: #fff;
-    font-size: 14px;
+    font-size: 12px;
+    font-weight: normal;
   }
   .fixed-button .sp-disappear {
     display: none;
@@ -1863,6 +3163,92 @@ section {
   }
 }
 /* CONTACT_TB */
+/* Case_TB */
+@media (width < 1280px) {
+  .case-page {
+    padding-top: 45px;
+  }
+  .case-page .main__section {
+    padding-bottom: 50px;
+  }
+  .case-page .main__section .casePage-heading-icon-area {
+    margin-bottom: 5px;
+  }
+  .case-page .main__section .main-area {
+    grid-template-columns: 1fr;
+    padding: 29px 20px 40px;
+  }
+  .case-page .main__section .center-wrap {
+    grid-template-columns: 1fr;
+    padding-top: 30px;
+  }
+  .case-page .main__section .sub-heading-text {
+    line-height: 24px;
+  }
+  .case-page .main__section .image-portion {
+    flex-direction: column-reverse;
+  }
+  .case-page .main__section .img-pc {
+    height: auto;
+  }
+  .case-page .main__section .case-text {
+    font-size: 20px;
+  }
+  .case-page .main__section .text-portion {
+    padding: 0 0 30px;
+  }
+  .case-page .main__section .number {
+    font-size: 35px;
+    margin-left: 6px;
+  }
+  .case-page .main__section .name {
+    font-size: 16px;
+  }
+  .case-page .main__section .sub-heading-text {
+    font-size: 16px;
+  }
+  .case-page .main__section .description-text {
+    padding: 14px 0 14px;
+    font-size: 12px;
+    line-height: 24px;
+  }
+  .case-page .main__section .text-portion {
+    padding: 0;
+  }
+  .case-page .main__section .description {
+    padding-top: 0;
+  }
+  .case-page .main__section .top-text {
+    padding: 16px 0 10px;
+  }
+  .case-page .main__section .career {
+    padding-top: 0;
+    padding-bottom: 15px;
+    font-size: 14px;
+  }
+  .case-page .main__section .career--strong {
+    font-size: 14px;
+  }
+  .case-page .main__section .comingsoon {
+    padding-top: 30px;
+  }
+  .case-page .main__section .comingsoon .img {
+    width: 127px;
+  }
+  .case-page .main__section .question-item {
+    gap: 10px;
+  }
+  .case-page .main__section .question-portion {
+    padding: 16.5px 10px;
+    border-radius: 10px;
+  }
+  .case-page .main__section .question-text {
+    font-size: 14px;
+  }
+  .case-page .main__section .answer-text {
+    font-size: 12px;
+  }
+}
 /* Smartphone用スタイル */
 /* Common_SP */
 @media (width < 600px) {
@@ -1926,7 +3312,7 @@ section {
     width: 100%;
   }
   .firstview__section .button-area {
-    top: 112vw;
+    top: 108.2vw;
   }
   .firstview__section .button {
     font-size: 14px;
@@ -1942,9 +3328,6 @@ section {
     height: 0;
     margin-top: 7vw;
   }
-  .firstview__section .button-area {
-    top: 108vw;
-  }
   .firstview__section .bottom-text {
     margin-top: 10px;
   }
@@ -1952,12 +3335,24 @@ section {
     flex-direction: column;
     gap: 30px;
   }
+  .fukugyoShokunin__section .bottom-portion {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
   .feature__section .bottom-portion {
     grid-template-columns: 1fr;
     gap: 14px;
   }
   .feature__section .text {
     padding-bottom: 30px;
+  }
+  .staffIntroduction__section .company,
+  .supervise__section .company {
+    text-align: left;
+  }
+  .staffIntroduction__section .heading2-text,
+  .supervise__section .heading2-text {
+    text-align: left;
   }
   .staff__section .company,
   .supervise__section .company {
@@ -2062,6 +3457,9 @@ section {
 @media (width < 600px) {
   .footer .container {
     text-align: center;
+    width: 87%;
+    padding-right: 0;
+    padding-left: 0;
   }
   .footer .footer-logo {
     height: 38px;
@@ -2074,12 +3472,113 @@ section {
     font-size: 14px;
   }
   .footer .link-box {
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-between;
+    gap: 10px;
     font-size: 14px;
   }
   .footer .link-text {
     font-size: 12px;
+  }
+}
+/* Case_SP */
+@media (width < 600px) {
+  .firstview__section {
+    padding-top: 45px;
+    padding-bottom: 0;
+  }
+  .firstview__section .container {
+    padding-bottom: 30px;
+  }
+  .firstview__section .topimg--pc {
+    display: none;
+  }
+  .firstview__section .topimg--sp {
+    display: inline-block;
+    width: 100%;
+  }
+  .firstview__section .button-area {
+    top: 112vw;
+  }
+  .firstview__section .button {
+    font-size: 14px;
+    padding-right: 28px;
+    padding-left: 28px;
+  }
+  .firstview__section .button-link {
+    font-size: 16px;
+  }
+  .firstview__section .bottom-text {
+    font-size: 12px;
+    line-height: 1.3em;
+    height: 0;
+    margin-top: 7vw;
+  }
+  .firstview__section .button-area {
+    top: 108vw;
+  }
+  .firstview__section .bottom-text {
+    margin-top: 10px;
+  }
+  .target__section .main-area {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .fukugyoShokunin__section .bottom-portion {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .feature__section .bottom-portion {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .feature__section .text {
+    padding-bottom: 30px;
+  }
+  .staffIntroduction__section .company,
+  .supervise__section .company {
+    text-align: left;
+  }
+  .staffIntroduction__section .heading2-text,
+  .supervise__section .heading2-text {
+    text-align: left;
+  }
+  .staff__section .company,
+  .supervise__section .company {
+    text-align: left;
+  }
+  .staff__section .heading2-text,
+  .supervise__section .heading2-text {
+    text-align: left;
+  }
+  .program__section .heading2-item {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .program__section .number {
+    margin-right: auto;
+  }
+  .plan__section .table-pc {
+    display: none;
+  }
+  .plan__section .table-box-sp {
+    display: grid;
+    gap: 30px;
+    white-space: initial;
+  }
+  .plan__section .heading-column {
+    display: block;
+    width: 100%;
+  }
+  .plan__section th {
+    display: block;
+    width: 100%;
+  }
+  .plan__section td {
+    width: 100%;
+    display: block;
+  }
+  .fixed-button {
+    background-color: #0F6CA9;
   }
 }
 /*# sourceMappingURL=style.css.map */

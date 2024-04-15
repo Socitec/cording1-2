@@ -8,9 +8,14 @@
             運営会社
           </p>
         </a>
-        <a class="link" href="">
+        <a class="link" href="https://color-with.com/privacy-policy" target="_blank" rel="noopener noreferrer">
           <p class="link-text">
             プライバシーポリシー
+          </p>
+        </a>
+        <a class="link" href="<?php echo home_url(); ?>/commerce">
+          <p class="link-text">
+            特定商取引法に基づく表記
           </p>
         </a>
       </div>

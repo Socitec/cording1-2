@@ -8,6 +8,9 @@
 
     .container {
       text-align: center;
+      width: 87%;
+      padding-right: 0;
+      padding-left: 0;
     }
 
     .footer-logo {
@@ -23,8 +26,8 @@
     }
 
     .link-box {
-      justify-content: center;
-      gap: 20px;
+      justify-content: space-between;
+      gap: 10px;
       font-size: $small-font-size;
     }
 

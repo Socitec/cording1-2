@@ -6,33 +6,29 @@
  */
 ?>
 
-
-
 <?php get_header(); ?>
 
 <main class="main">
   <!-- メインビジュアル -->
 
-  <section class="firstview__section" id="firstview">
+  <section class="firstview__section firstview__section--revise" id="firstview">
     <div class="container">
       <img class="topimg--pc" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/top_firstview-pc.png" alt="firstview">
       <img class="topimg--sp" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/top_firstview-sp.png" alt="firstview">
       <div class="button-area">
         <button class="button">
           <a class="button-link" href="<?php echo home_url(); ?>/contact">
-            複業マイスターと無料面談してみる
+            無料面談で複業スキルを発掘する
           </a>
         </button>
-        <p class="bottom-text c_sp-emerge">
-          ※複業マイスター＝100社以上の複業実績のある<br class="c_tb-emerge">プロフェッショナルのこと。 <br>
-          複業職人の本プログラムの開発および講師を務めています。
-        </p>
+        <div id="aboutFukugyou"></div>
       </div>
       <div id="target"></div>
     </div>
   </section>
 
   <!-- こんな人におすすめ -->
+  <!-- 
   <section class="target__section">
     <div class="container">
       <h2 class="c_heading-text">
@@ -94,20 +90,35 @@
       <div id="about"></div>
     </div>
   </section>
+  -->
 
-  <!--  複業職人とは -->
-  <section class="about__section" id="">
+  <!--  複業とは -->
+  <section class="about__section about__section--revise" id="">
     <div class="container">
-      <h2 class="c_heading-text">
-        複業職人 とは？
+      <!-- <h2 class="c_heading-text">
+        複業とは？
       </h2>
       <div class="c_heading-icon-area">
         <div class="c_heading-icon"></div>
       </div>
       <p class="c_subheading-text">
-        複業活動に必要な実践ノウハウを体得する、独自のプログラムです
-      </p>
+        理想のライフスタイルを実現するための新しい働き方です
+      </p> -->
       <div class="main-area">
+        <div class="heading-box">
+          <h3 class="heading2-text">
+            <span class="heading2-text--strong">複業</span>という働き方は、<br>
+            <span class="heading2-text--strong">理想のライフスタイル</span>を実現するための、<br>
+            <span class="heading2-text--strong">あたらしい</span>働き方です。
+          </h3>
+        </div>
+        <div class="button-box">
+          <button class="about-button" id="js_about-button">
+            「複業」と「副業」の違いとは？
+          </button>
+        </div>
+
+        <!--       
         <img class="photo-pc" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/top_about-pc.png" alt="doublework">
         <img class="photo-sp" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/top_about-sp.png" alt="doublework">
         <div class="heading2-box">
@@ -118,34 +129,144 @@
         </div>
         <div class="description-box">
           <p class="description-text">
-            複業は、複数の仕事を行って報酬アップするためだけにとどまらず、<br class="c_sp-disappear">
-            新たなスキル習得・キャリアアップ・自己実現・地域や組織への恩返しなど<br class="c_sp-disappear">
-            目的が多様化してきており、今や「自身の生き方をより充実させる手段のひとつ」に<br class="c_sp-disappear">
-            なってきていると考えています。
+            <span class="description-text--number">1</span> 複数の企業で自分のスキルを自由に活かし<br>
+            <span class="description-text--number">2</span> 指示された業務をこなすだけではなく、当事者意識を持って取り組み<br>
+            <span class="description-text--number">3</span> どんな雇用（契約）形態であっても、複数の仕事に対し、いずれも本業として向き合う<br>
+            私たちは、このような働き方を“<span class="description-text--strong"> 複業 </span>”と定義しています。
           </p>
           <p class="description-text">
-            また、複業は雇用される働き方とは異なる部分も多く、通常のビジネスシーンでは<br class="c_sp-disappear">
-            学べない、いわば<span class="description-text--strong"> ”複業力” </span>ともいうべき<span class="description-text--strong">独特なテクニック</span>が必要です。<br>
+            現在の仕事で得られる報酬額をプラスするための “副業” と比較して、<br class="c_sp-disappear">
+            “<span class="description-text--strong">複業 </span>”は「<span class="description-text--strong">自己成長</span>」「<span class="description-text--strong">ライフスタイル</span>」「<span class="description-text--strong">社会貢献</span>」など、<br class="c_sp-disappear">
+            あなたの思い描く 人生を理想のかたち にデザインするための選択肢となります。
           </p>
           <p class="description-text">
-            複業職人 は、これまで複業で多くの成果を出してきたプロが<br class="c_sp-disappear">
-            これから複業を始めたい人、もっと複業で活躍したい方々に対して、<br class="c_sp-disappear">
-            <span class="description-text--strong">複業活動ならではのノウハウ</span>を盛り込んだ、<span class="description-text--strong">独自プログラム</span>をご用意しています。<br>
+            私たちの定義する「<span class="description-text--strong">複業職人</span>」は、特定の企業内にとどまらず、ご自身のスキルを活かして<br class="c_sp-disappear">
+            戦略から実行まで能動的に取り組むプロフェッショナルを指しています。
+            指示待ちで外注として働く人材に比べて<span class="description-text--strong">圧倒的な差別化</span> を図れるうえ、<br class="c_sp-disappear">
+            あなたの意識と努力次第でワークライフバランスを飛躍的に向上させることができます。
+          </p>
+          <p class="author-text">
+            複業マイスター　若色広大　高橋範慈
+          </p>
+        </div> -->
+      </div>
+    </div>
+    <div id="aboutFukugyouShokunin"></div>
+  </section>
+
+  <!-- ポップアップ-複業と副業の違い -->
+  <div class="about-popup-block c_popup-block" id="js_about-popup-block">
+    <div class="inner-box c_inner-box">
+      <i class="fa-solid fa-xmark close-button" id="js_about-close-button"></i>
+      <div class="main-content">
+        <div class="top-portion">
+          <p class="top-text">
+            <span class="top-text--strong">“複業” </span>という働き方は、
+          </p>
+          <p class="top-text">
+            <span class="top-text--strong">個性 </span>を活かし、人生を <span class="top-text--strong">豊か</span> にする。
+          </p>
+        </div>
+        <img class="photo-sp c_tb-emerge" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/top_about-sp.png" alt="doublework">
+        <div class="description-box">
+          <p class="description-text">
+            <span class="description-text--number">1.</span> 複数の企業で自分のスキルを自由に活かし<br>
+            <span class="description-text--number">2.</span> 指示された業務をこなすだけではなく、当事者意識を持って取り組み<br>
+            <span class="description-text--number">3.</span> どんな雇用（契約）形態であっても、複数の仕事に対し、いずれも本業として向き合う<br>
+            私たちは、このような働き方を“<span class="description-text--strong"> 複業 </span>”と定義しています。
           </p>
           <p class="description-text">
-            複業であなたの個性を最大限に活かし、より豊かな人生を実現しましょう！
+            現在の仕事で得られる報酬額をプラスするための “副業” と比較して、<br class="c_sp-disappear">
+            “<span class="description-text--strong">複業 </span>”は「<span class="description-text--strong">自己成長</span>」「<span class="description-text--strong">ライフスタイル</span>」「<span class="description-text--strong">社会貢献</span>」など、<br class="c_sp-disappear">
+            あなたの思い描く 人生を理想のかたち にデザインするための選択肢となります。
+          </p>
+          <p class="description-text">
+            私たちの定義する「<span class="description-text--strong">複業職人</span>」は、特定の企業内にとどまらず、ご自身のスキルを活かして<br class="c_sp-disappear">
+            戦略から実行まで能動的に取り組むプロフェッショナルを指しています。
+            指示待ちで外注として働く人材に比べて<span class="description-text--strong">圧倒的な差別化</span> を図れるうえ、<br class="c_sp-disappear">
+            あなたの意識と努力次第でワークライフバランスを飛躍的に向上させることができます。
           </p>
           <p class="author-text">
             複業マイスター　若色広大　高橋範慈
           </p>
         </div>
       </div>
-      <div id="feature"></div>
+      <img class="photo-pc" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/top_about-pc.png" alt="doublework">
     </div>
+  </div>
+
+  <!-- 複業職人とは -->
+  <section class="fukugyoShokunin__section" id="">
+    <div class="container">
+      <h2 class="c_heading-text">
+        複業職人 とは？
+      </h2>
+      <div class="c_heading-icon-area">
+        <div class="c_heading-icon"></div>
+      </div>
+      <p class="c_subheading-text">
+        複業に必要な「仕事の獲得方法」「報酬設定」などを<br class="c_sp-emerge">学べる実践的なプログラムです
+      </p>
+      <div class="main-area">
+        <div class="item">
+          <div class="top-portion">
+            <p class="point"> point 01</p>
+            <h3 class="heading2-text">
+              実践的な“複業力”を <br class="c_tb-emerge">身に付けられる
+            </h3>
+          </div>
+          <div class="bottom-portion">
+            <img class="img" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/top_feature1.png" alt="feature">
+            <p class="text">
+              複業市場で価値を高めていくには、与えられた仕事をこなすだけではなく、積極的にあなたが発揮できるスキルを言語化し、複業先への関わり方も具体的に提示していく必要があります。<br>
+              <span class="text--strong">複業先の課題ではなく『”要望”を引き出す力』<br>
+                複業先に対して適切に『自分自身を魅せる力』<br>
+                複業先を自ら『リードするコミュニケーション力』</span><br>
+              これら「複業力」を独力で身に付けるのは至難の業。<br>
+              複業職人では、ポートフォリオを作成したり、ロールプレイングを交えたりして実践的に学びながら、即戦力として活躍できるよう成長していただけます。
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="top-portion">
+            <p class="point"> point 02</p>
+            <h3 class="heading2-text">
+              すべて個別1on1形式<br class="c_tb-emerge"> 『個性の発揮』に注力 </h3>
+          </div>
+          <div class="bottom-portion">
+            <img class="img" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/top_feature2.png" alt="feature">
+            <p class="text">
+              プログラムはすべてオンラインでの<span class="text--strong">1on1形式</span>で実施します。<br>
+              私たちから一方的に教えるのではなく、コミュニケーションを取りながら、独自のライフスコアを使って現状を的確に把握し、あなたの目指す理想像を言語化していきます。<br>
+              様々な複業ワーカーの個人差やデータを熟知した講師陣が、あなたの隠れた強みや個性を最大限に活かすために伴走。<br>
+              経験がない間はどうしても苦労しがちな、<span class="text--strong">案件の効果的な獲得方法・単価の設定/上げ方</span>などについても1on1で習得していきます。
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="top-portion">
+            <p class="point"> point 03</p>
+            <h3 class="heading2-text">
+              全職種に対応可能
+            </h3>
+          </div>
+          <div class="bottom-portion">
+            <img class="img" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/top_feature3.png" alt="feature">
+            <p class="text">
+              複業職人には、事業開発/営業マネジメント/人事・採用/マーケター/デザイナー/広報/プログラマーなど、多種多様な職務経験をお持ちの方にご利用いただいてます。<br>
+              複業職人を通じて、<span class="text--strong">あなた自身も気づかない経験やスキル</span>を見出していきますので、例えば営業職の方が採用やマネジメント業務の複業を獲得した例もあります。<br>
+              また、複業を獲得する/継続するスキルは、職種を問わず活用いただける内容です。企業の求めるスキルは多種多様ですので、まずはお気軽にご相談ください。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="program"></div>
   </section>
 
   <!-- 特徴 -->
-  <section class="feature__section" id="">
+  <!-- 
+    <section class="feature__section" id=""> 
     <div class="container">
       <h2 class="c_heading-text">
         特徴
@@ -202,110 +323,7 @@
       <div id="staff"></div>
     </div>
   </section>
-
-  <!-- 講師紹介 -->
-  <section class="staff__section" id="">
-    <div class="container">
-      <h2 class="c_heading-text">
-        講師紹介
-      </h2>
-      <div class="c_heading-icon-area">
-        <div class="c_heading-icon"></div>
-      </div>
-      <p class="c_subheading-text">
-        複業経験の豊富なマイスターがマンツーマンで支援します
-      </p>
-      <div class="main-area">
-        <div class="box">
-          <img class="img-pc" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/top_staff-wakairo-pc.png" alt="staff">
-          <img class="img-sp" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/top_staff-wakairo-sp.png" alt="staff">
-          <div class="text-portion">
-            <p class="company">
-              Color WiTh株式会社
-            </p>
-            <h3 class="heading2-text">
-              複業マイスター　<span class="text-large">若色 広大</span><br class="c_sp-emerge">
-              <span class="english">
-                Wakairo Kodai
-              </span>
-            </h3>
-            <p class="description">
-              新卒でコカ・コーラボトラーズジャパン株式会社へ入社し、1年目で新人セールス賞受賞、3年目でエリア課長に就任。<br>
-              その後、株式会社パソナ（現：株式会社パソナJOB HUB）へ転職。顧問やフリーランスを業務委託紹介する新規事業に従事し、年間MVPなど複数受賞。 <br>
-              その傍ら、パソナ社長直轄にて高橋と共に新規事業部署を立ち上げ、複数の新規事業を創出し、全て黒字化に導く。<br>
-              更に日本全国地場産業を盛り上げるため、株式会社トレジャーフットへ事業部長として参画し、複業人材マッチング事業を創出。0→10人の組織拡大に加え、会社全体の売り上げの約40%を一人で創出。<br>
-              全ての企業様が抱いている『要望』を0から共に実現させるため、高橋と共にColor WiThを創業。経営層からの要望を実現に向けて、0→1のアイディア出し～組織作り～会社/組織全体のディレクション、ときには自身で営業活動も行うなど、一貫して密な携わり方をすることで、多方面の分野で結果を出し続けている。 <br>
-              個人事業主や高橋との協業により、全国で累計のべ100社を超えた複業実績をもとに、独自の複業実践プログラム「複業職人」を開発するに至る。
-            </p>
-          </div>
-        </div>
-        <div class="box">
-          <img class="img-pc" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/top_staff-takahashi-pc.png" alt="staff">
-          <img class="img-sp" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/top_staff-takahashi-sp.png" alt="staff">
-          <div class="text-portion">
-            <p class="company">
-              Color WiTh株式会社
-            </p>
-            <h3 class="heading2-text">
-              複業マイスター　<span class="text-large">高橋 範慈</span><br class="c_sp-emerge">
-              <span class="english">
-                Takahashi Norichika </span>
-            </h3>
-            <p class="description">
-              新卒で株式会社パソナに入社後、法人営業／キャリアカウンセラーとして全国20都県以上を行脚。 <br>
-              商工会議所や地場企業と連携した採用イベント、東日本大震災被災者のカウンセリング、防衛省からの受託事業運営など、全国各地の産業や雇用問題に触れながら、数々の新規プロジェクト立上げへ参画。 <br>
-              その後、経営者向け営業部隊を立上げた際、経営層の抱える課題・特命事項に触れたことをきっかけに、自身でも新規事業を志し、若色と複数の新規事業を創出。すべて黒字化を達成。 地方創生ベンチャーの全国営業部長を経て、更なる地域貢献と、すべての企業様が抱く『要望』の実現に尽力したいという想いから、若色と共にColor WiThを創業。 <br>
-              複業では、個人事業主として、また若色とともに他分野での実績を積み上げる。<br>
-              経営層からの様々な要望をいかにして実現するか？にこだわり、実現までのストーリーづくりを強みとすることで、自身の経験のある新規事業開発や採用支援をはじめ、人事評価制度構築やWEBマーケティングなど幅広いプロジェクトに携わった経験を持つ。
-            </p>
-          </div>
-        </div>
-      </div>
-      <div id="supervise"></div>
-    </div>
-  </section>
-
-  <!-- 監修 -->
-  <section class="supervise__section" id="">
-    <div class="container">
-      <h2 class="c_heading-text">
-        監修
-      </h2>
-      <div class="c_heading-icon-area">
-        <div class="c_heading-icon"></div>
-      </div>
-      <div class="main-area">
-
-        <div class="box">
-          <img class="img-pc" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/top_supervisor-pc.png" alt="staff">
-          <img class="img-sp" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/top_supervisor-sp.png" alt="staff">
-          <div class="text-portion">
-            <p class="company">
-              株式会社Another works
-            </p>
-            <h3 class="heading2-text">
-              複業エバンジェリスト　<span class="text-large">大林 尚朝</span><br class="c_sp-emerge">
-              <span class="english">
-                Obayashi Naotomo
-              </span>
-            </h3>
-            <p class="description">
-              早稲田大学法学部卒業。パソナグループに新卒入社後、株式会社ビズリーチ(現.ビジョナル株式会社)での事業立ち上げ経験を経て、2019年、株式会社Another works創業。<br>
-              業界初、複業したい個人と企業や自治体を繋ぐ、成功報酬無料の総合型複業マッチングプラットフォーム「複業クラウド」を開発・運営。リリース4年で累計60,000名、1,000社以上が登録。<br>
-              複業や令和の働き方、キャリアの最前線を発信し、テレビ東京「WBS（ワールドビジネスサテライト）」など多数メディアに複業推進企業の代表として出演。東京都や大阪産業局が主催するプログラムなど多方面で講師やメンターを務める。<br>
-              <br>
-              <br>
-              著書「スキルマッチング型複業(副業)の実践書」<br>
-              <a class="link" href="https://fukugyo.naotomo-obayashi.com/" target="_blank" rel="noopener noreferrer">
-                https://fukugyo.naotomo-obayashi.com/
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div id="program"></div>
-    </div>
-  </section>
+-->
 
   <!-- プログラム -->
   <section class="program__section" id="">
@@ -317,8 +335,8 @@
         <div class="c_heading-icon"></div>
       </div>
       <p class="c_subheading-text">
-        すべてのプログラムは複業マイスターとの個別1on1にて実施<br>
-        ”<span class="text--strong">即実践</span>” にこだわり、最小時間にノウハウを凝縮しています
+        全職種、”即実践” で活かせる複業スキルを<br>
+        <span class="text--strong">「1on1」</span>かつ<span class="text--strong">「3ヵ月」</span>で体得する独自プログラムです
       </p>
       <div class="main-area">
         <div class="inner-wrapper">
@@ -360,8 +378,8 @@
               </div>
             </div>
             <p class="description">
-              『個性を活かす』＝”自分自身の価値を築き上げ、その価値が最大限伝わるようアウトプットできるようになる”ことだと定義し、まずは自身を「ハッシュタグ化」することで、自身の強みをキーワードとして洗い出します。<br>
-              また、初対面でもあなたがどのような貢献ができるのか？自身の価値を表す「ポートフォリオ」を作成することで、自身の価値を汎用的に伝えられるようにかたちにします。
+              『個性を活かす』＝”自分自身の価値を築き上げ、その価値が最大限伝わるようアウトプットできるようになる”ことだと定義し、まずはあなた自身を「ハッシュタグ化」して、今ある強みをキーワードとして洗い出します。<br>
+              また、あなたの価値や、どのような貢献ができるのかを汎用的に伝えるために、自己紹介として使える「ポートフォリオ」を作成します。
             </p>
             <div class="icon-portion">
               <p class="plan-icon icon--starter">
@@ -389,7 +407,7 @@
             </div>
             <p class="description">
               複業案件の探し方/選び方から、初回の複業先とのアポイントの進め方までの一連の流れとポイントを押さえます。<br>
-              商談はロールプレイング形式にて行い、実際の複業先とどのようなコミュニケーションを取ればよいか？個別案件に応じたフィードバックを行います。
+              商談はロールプレイング形式で行い、実際の複業先とどのようなコミュニケーションを取ればよいか？など、個別案件に応じてフィードバックいたします。
             </p>
             <div class="icon-portion">
               <p class="plan-icon icon--starter">
@@ -411,7 +429,7 @@
                   複業獲得の進め方②
                 </h3>
                 <p class="heading2-bottom-text">
-                  提案立案～プレゼンテーション～受注まで
+                  提案立案～プレゼン<br class="c_sp-emerge">テーション～受注まで
                 </p>
               </div>
             </div>
@@ -475,8 +493,265 @@
         </div>
         <div class="line"></div>
       </div>
-      <div id="plan"></div>
     </div>
+    <div id="staff"></div>
+  </section>
+
+  <!-- 講師紹介-改修 -->
+  <section class="staffIntroduction__section" id="">
+    <div class="container">
+      <h2 class="c_heading-text">
+        講師紹介
+      </h2>
+      <div class="c_heading-icon-area">
+        <div class="c_heading-icon"></div>
+      </div>
+      <p class="c_subheading-text">
+        複業経験の豊富なマイスターがマンツーマンで支援します
+      </p>
+      <p class="aboutMister-text">
+        ※複業マイスター＝100社以上の複業実績のあるプロフェッショナルのこと。<br class="c_sp-emerge">
+        複業職人の本プログラムの開発および講師を務めています。
+      </p>
+      <div class="main-area">
+        <div class="box">
+          <img class="img-pc" id="js_profile1-img" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/top_staff-wakairo-sp.png" alt="staff">
+          <div class="text-portion">
+            <p class="company">
+              Color WiTh株式会社
+            </p>
+            <h3 class="heading2-text">
+              複業マイスター　<span class="text-large">若色 広大</span><br class="c_sp-emerge">
+              <span class="english">
+                Wakairo Kodai
+              </span>
+            </h3>
+            <div class="button-parts">
+              <a href="https://twitter.com/wakairo_CW" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter x-twitter-icon"></i></a>
+              <button id="js_profile1-button" class="profile-button">profile</button>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <img class="img-pc" id="js_profile2-img" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/top_staff-takahashi-sp.png" alt="staff">
+          <div class="text-portion">
+            <p class="company">
+              Color WiTh株式会社
+            </p>
+            <h3 class="heading2-text">
+              複業マイスター　<span class="text-large">高橋 範慈</span><br class="c_sp-emerge">
+              <span class="english">
+                Takahashi Norichika </span>
+            </h3>
+            <div class="button-parts">
+              <a href="https://twitter.com/takahashi_CW" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter x-twitter-icon"></i></a>
+              <button id="js_profile2-button" class="profile-button">profile</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="book-area">
+        <h3 class="heading-main-text">
+          著書紹介
+        </h3>
+        <div class="image-box">
+          <a href="https://www.amazon.co.jp/dp/4295409383?ref_=cm_sw_r_cp_ud_dp_9QS7KPXSEN6GTVTH7B0X" target="_blank" rel="noopener noreferrer">
+            <img class="book-image" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/top_book-issue.jpg" alt="book">
+          </a>
+        </div>
+      </div>
+      <div id="supervise"></div>
+    </div>
+  </section>
+
+  <!-- 講師紹介 -->
+  <!-- 
+  <section class="staff__section" id="">
+    <div class="container">
+      <h2 class="c_heading-text">
+        講師紹介
+      </h2>
+      <div class="c_heading-icon-area">
+        <div class="c_heading-icon"></div>
+      </div>
+      <p class="c_subheading-text">
+        複業経験の豊富なマイスターがマンツーマンで支援します
+      </p>
+      <div class="main-area">
+        <div class="box">
+          <img class="img-pc" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/top_staff-wakairo-pc.png" alt="staff">
+          <img class="img-sp" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/top_staff-wakairo-sp.png" alt="staff">
+          <div class="text-portion">
+            <p class="company">
+              Color WiTh株式会社
+            </p>
+            <h3 class="heading2-text">
+              複業マイスター　<span class="text-large">若色 広大</span><br class="c_sp-emerge">
+              <span class="english">
+                Wakairo Kodai
+              </span>
+            </h3>
+            <p class="description">
+              新卒でコカ・コーラボトラーズジャパン株式会社へ入社し、1年目で新人セールス賞受賞、3年目でエリア課長に就任。<br>
+              その後、株式会社パソナ（現：株式会社パソナJOB HUB）へ転職。顧問やフリーランスを業務委託紹介する新規事業に従事し、年間MVPなど複数受賞。 <br>
+              その傍ら、パソナ社長直轄にて高橋と共に新規事業部署を立ち上げ、複数の新規事業を創出し、全て黒字化に導く。<br>
+              更に日本全国地場産業を盛り上げるため、株式会社トレジャーフットへ事業部長として参画し、複業人材マッチング事業を創出。0→10人の組織拡大に加え、会社全体の売り上げの約40%を一人で創出。<br>
+              全ての企業様が抱いている『要望』を0から共に実現させるため、高橋と共にColor WiThを創業。経営層からの要望を実現に向けて、0→1のアイディア出し～組織作り～会社/組織全体のディレクション、ときには自身で営業活動も行うなど、一貫して密な携わり方をすることで、多方面の分野で結果を出し続けている。 <br>
+              個人事業主や高橋との協業により、全国で累計のべ100社を超えた複業実績をもとに、独自の複業実践プログラム「複業職人」を開発するに至る。
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <img class="img-pc" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/top_staff-takahashi-pc.png" alt="staff">
+          <img class="img-sp" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/top_staff-takahashi-sp.png" alt="staff">
+          <div class="text-portion">
+            <p class="company">
+              Color WiTh株式会社
+            </p>
+            <h3 class="heading2-text">
+              複業マイスター　<span class="text-large">高橋 範慈</span><br class="c_sp-emerge">
+              <span class="english">
+                Takahashi Norichika </span>
+            </h3>
+            <p class="description">
+              新卒で株式会社パソナに入社後、法人営業／キャリアカウンセラーとして全国20都県以上を行脚。 <br>
+              商工会議所や地場企業と連携した採用イベント、東日本大震災被災者のカウンセリング、防衛省からの受託事業運営など、全国各地の産業や雇用問題に触れながら、数々の新規プロジェクト立上げへ参画。 <br>
+              その後、経営者向け営業部隊を立上げた際、経営層の抱える課題・特命事項に触れたことをきっかけに、自身でも新規事業を志し、若色と複数の新規事業を創出。すべて黒字化を達成。 地方創生ベンチャーの全国営業部長を経て、更なる地域貢献と、すべての企業様が抱く『要望』の実現に尽力したいという想いから、若色と共にColor WiThを創業。 <br>
+              複業では、個人事業主として、また若色とともに他分野での実績を積み上げる。<br>
+              経営層からの様々な要望をいかにして実現するか？にこだわり、実現までのストーリーづくりを強みとすることで、自身の経験のある新規事業開発や採用支援をはじめ、人事評価制度構築やWEBマーケティングなど幅広いプロジェクトに携わった経験を持つ。
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="book-area">
+        <div class="heading-box">
+          <div class="heading-balloon-portion">
+            <p class="heading-top-text">
+              複業マイスター
+            </p>
+            <h3 class="heading-main-text">
+              若色 & 高橋による<br>
+              複業実践本も発売中！
+            </h3>
+          </div>
+        </div>
+        <div class="image-box">
+          <img class="book-image" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/top_book-issue.jpg" alt="book">
+        </div>
+        <div class="book-description-box">
+          <p class="book-description-top-text">
+            複業コンパス 100社経験から語る複業実践ノウハウ
+          </p>
+          <p class="book-description-main-text">
+            誰もが知らなかった「複業の暗黙知」を明らかにし、<br>
+            誰もが実践できる「複業実践ノウハウ」が満載の一冊！
+          </p>
+        </div>
+      </div>
+      <div id="supervise"></div>
+    </div>
+  </section>
+   -->
+
+  <!-- ポップアップ-プロフィール1 -->
+  <div class="profile1-popup-block c_popup-block" id="js_profile1-popup-block">
+    <div class="inner-box c_inner-box">
+      <i class="fa-solid fa-xmark close-button" id="js_profile1-close-button"></i>
+      <div class="box">
+        <img class="img-pc" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/top_staff-wakairo-pc.png" alt="staff">
+        <img class="img-sp" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/top_staff-wakairo-sp.png" alt="staff">
+        <div class="text-portion">
+          <p class="company">
+            Color WiTh株式会社
+          </p>
+          <h3 class="heading2-text">
+            複業マイスター　<span class="text-large">若色 広大</span><br class="c_sp-emerge">
+            <span class="english">
+              Wakairo Kodai
+            </span>
+          </h3>
+          <p class="description">
+            新卒でコカ・コーラボトラーズジャパン株式会社へ入社し、1年目で新人セールス賞受賞、3年目でエリア課長に就任。<br>
+            その後、株式会社パソナ（現：株式会社パソナJOB HUB）へ転職。顧問やフリーランスを業務委託紹介する新規事業に従事し、年間MVPなど複数受賞。 <br>
+            その傍ら、パソナ社長直轄にて高橋と共に新規事業部署を立ち上げ、複数の新規事業を創出し、全て黒字化に導く。<br>
+            更に日本全国地場産業を盛り上げるため、株式会社トレジャーフットへ事業部長として参画し、複業人材マッチング事業を創出。0→10人の組織拡大に加え、会社全体の売り上げの約40%を一人で創出。<br>
+            全ての企業様が抱いている『要望』を0から共に実現させるため、高橋と共にColor WiThを創業。経営層からの要望を実現に向けて、0→1のアイディア出し～組織作り～会社/組織全体のディレクション、ときには自身で営業活動も行うなど、一貫して密な携わり方をすることで、多方面の分野で結果を出し続けている。 <br>
+            個人事業主や高橋との協業により、全国で累計のべ100社を超えた複業実績をもとに、独自の複業実践プログラム「複業職人」を開発するに至る。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ポップアップ-プロフィール2 -->
+  <div class="profile2-popup-block c_popup-block" id="js_profile2-popup-block">
+    <div class="inner-box c_inner-box">
+      <i class="fa-solid fa-xmark close-button" id="js_profile2-close-button"></i>
+      <div class="box">
+        <img class="img-pc" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/top_staff-takahashi-pc.png" alt="staff">
+        <img class="img-sp" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/top_staff-takahashi-sp.png" alt="staff">
+        <div class="text-portion">
+          <p class="company">
+            Color WiTh株式会社
+          </p>
+          <h3 class="heading2-text">
+            複業マイスター　<span class="text-large">高橋 範慈</span><br class="c_sp-emerge">
+            <span class="english">
+              Takahashi Norichika
+            </span>
+          </h3>
+          <p class="description">
+            新卒で株式会社パソナに入社後、法人営業／キャリアカウンセラーとして全国20都県以上を行脚。 <br>
+            商工会議所や地場企業と連携した採用イベント、東日本大震災被災者のカウンセリング、防衛省からの受託事業運営など、全国各地の産業や雇用問題に触れながら、数々の新規プロジェクト立上げへ参画。 <br>
+            その後、経営者向け営業部隊を立上げた際、経営層の抱える課題・特命事項に触れたことをきっかけに、自身でも新規事業を志し、若色と複数の新規事業を創出。すべて黒字化を達成。 地方創生ベンチャーの全国営業部長を経て、更なる地域貢献と、すべての企業様が抱く『要望』の実現に尽力したいという想いから、若色と共にColor WiThを創業。 <br>
+            複業では、個人事業主として、また若色とともに他分野での実績を積み上げる。<br>
+            経営層からの様々な要望をいかにして実現するか？にこだわり、実現までのストーリーづくりを強みとすることで、自身の経験のある新規事業開発や採用支援をはじめ、人事評価制度構築やWEBマーケティングなど幅広いプロジェクトに携わった経験を持つ。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 監修 -->
+  <section class="supervise__section" id="">
+    <div class="container">
+      <h2 class="c_heading-text">
+        監修
+      </h2>
+      <div class="c_heading-icon-area">
+        <div class="c_heading-icon"></div>
+      </div>
+      <div class="main-area">
+
+        <div class="box">
+          <img class="img-pc" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/top_supervisor-pc.png" alt="staff">
+          <img class="img-sp" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/top_supervisor-sp.png" alt="staff">
+          <div class="text-portion">
+            <p class="company">
+              株式会社Another works
+            </p>
+            <h3 class="heading2-text">
+              複業エバンジェリスト　<span class="text-large">大林 尚朝</span><br class="c_sp-emerge">
+              <span class="english">
+                Obayashi Naotomo
+              </span>
+            </h3>
+            <p class="description">
+              早稲田大学法学部卒業。パソナグループに新卒入社後、株式会社ビズリーチ(現.ビジョナル株式会社)での事業立ち上げ経験を経て、2019年、株式会社Another works創業。<br>
+              業界初、複業したい個人と企業や自治体を繋ぐ、成功報酬無料の総合型複業マッチングプラットフォーム「複業クラウド」を開発・運営。リリース4年で累計60,000名、1,000社以上が登録。<br>
+              複業や令和の働き方、キャリアの最前線を発信し、テレビ東京「WBS（ワールドビジネスサテライト）」など多数メディアに複業推進企業の代表として出演。東京都や大阪産業局が主催するプログラムなど多方面で講師やメンターを務める。<br>
+              <br>
+              <br>
+              著書「スキルマッチング型複業(副業)の実践書」<br>
+              <a class="link" href="https://fukugyo.naotomo-obayashi.com/" target="_blank" rel="noopener noreferrer">
+                https://fukugyo.naotomo-obayashi.com/
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="plan"></div>
   </section>
 
   <!-- プラン -->
@@ -523,7 +798,7 @@
               </td>
             </tr>
             <tr class="main-row">
-              <td class="heading-column">内容／<br> 得られること</td>
+              <td class="heading-column">内容／<br class="sp-disappear"> 得られること</td>
               <td class="main-data">
                 <span class="main-data--heading">プログラム１～３まで</span><br>
                 <span class="main-data--stater-number">1.</span>複業の目的／動機の明確化 <br>
@@ -561,11 +836,11 @@
             <tr class="main-row">
               <td class="heading-column">料金</td>
               <td class="main-data data--center">
-                <span class="main-data--heading">20万円 </span><br>
+                <span class="main-data--heading">30万円 </span><br>
                 ※受講開始時にお支払い（分割可）
               </td>
               <td class="main-data data--center">
-                <span class="main-data--heading">30万円 </span><br>
+                <span class="main-data--heading">45万円 </span><br>
                 ※受講開始時にお支払い（分割可）
               </td>
               <td class="main-data data--center">
@@ -581,7 +856,7 @@
               <td class="main-data data--center">
                 <span class="main-data--heading">複業クラウド認定バッジ </span><br>
                 ポートフォリオ集 <br>
-                複業先向け提案資料ひな型<br>
+                提案資料ひな型<br>
                 複業契約書ひな形
               </td>
               <td class="main-data data--center">
@@ -610,7 +885,7 @@
                 </td>
               </tr>
               <tr class="main-row">
-                <td class="heading-column">内容／<br> 得られること</td>
+                <td class="heading-column">内容／得られること</td>
                 <td class="main-data">
                   <span class="main-data--heading">プログラム１～３まで</span><br>
                   <span class="main-data--stater-number">1.</span>複業の目的／動機の明確化 <br>
@@ -628,7 +903,7 @@
               <tr class="main-row">
                 <td class="heading-column">料金</td>
                 <td class="main-data data--center">
-                  <span class="main-data--heading">20万円 </span><br>
+                  <span class="main-data--heading">30万円 </span><br>
                   ※受講開始時にお支払い（分割可）
                 </td>
               </tr>
@@ -659,7 +934,7 @@
                 </td>
               </tr>
               <tr class="main-row">
-                <td class="heading-column">内容／<br> 得られること</td>
+                <td class="heading-column">内容／得られること</td>
                 <td class="main-data">
                   <span class="main-data--heading">プログラム1～5まで</span><br>
                   <span class="main-data--standard-number">1.</span>複業の目的／動機の明確化 <br>
@@ -679,7 +954,7 @@
               <tr class="main-row">
                 <td class="heading-column">料金</td>
                 <td class="main-data data--center">
-                  <span class="main-data--heading">30万円 </span><br>
+                  <span class="main-data--heading">45万円 </span><br>
                   ※受講開始時にお支払い（分割可）
                 </td>
               </tr>
@@ -688,13 +963,12 @@
                 <td class="main-data data--center">
                   <span class="main-data--heading">複業クラウド認定バッジ </span><br>
                   ポートフォリオ集<br>
-                  複業先向け提案資料ひな型 <br>
+                  提案資料ひな型 <br>
                   複業契約書ひな形
                 </td>
               </tr>
             </tbody>
           </table>
-
 
           <table class="table" border="1">
             <thead>
@@ -712,7 +986,7 @@
                 </td>
               </tr>
               <tr class="main-row">
-                <td class="heading-column">内容／<br> 得られること</td>
+                <td class="heading-column">内容／得られること</td>
                 <td class="main-data">
                   <span class="main-data--heading">プログラム6</span><br>
                   <span class="main-data--afterfollow-number">6.</span>複業先との業務をよりよく進めるため、<br> 　業務をマネジメント／<br> 　ディレクションするスキル
@@ -728,15 +1002,50 @@
               <tr class="main-row">
                 <td class="heading-column">料金</td>
                 <td class="main-data data--center">
-                  <span class="main-data--heading">複業クラウド認定バッジ </span><br>
-                  ポートフォリオ集 複業先向け提案資料ひな型 複業契約書ひな形
+                  チャットのみ：月3万<br>
+                  面談＋チャット：月5万<br>
+                  ※アフターフォロープランのみ月額支払いとなります
                 </td>
+              </tr>
+              <tr class="main-row">
+                <td class="heading-column">特典</td>
                 <td class="main-data data--center">
-                  随時Color WiTh社より <br>案件紹介の可能性あり
+                  随時Color WiTh社より<br>
+                  案件紹介の可能性あり
                 </td>
               </tr>
             </tbody>
           </table>
+        </div>
+      </div>
+      <div class="portfolio-area">
+        <h2 class="c_heading-text">
+          特典イメージ
+        </h2>
+        <div class="c_heading-icon-area">
+          <div class="c_heading-icon"></div>
+        </div>
+        <div class="main-box">
+          <div class="portfolio-item">
+            <div class="portfolio-balloon-box">
+              <p class="portfolio-balooon-text">
+                ポートフォリオひな形
+              </p>
+            </div>
+            <div class="portfolio-image-box">
+              <img class="portfolio-img" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/plan_portfolio-1.png" alt="portfolio">
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <div class="portfolio-balloon-box">
+              <p class="portfolio-balooon-text">
+                提案資料ひな形
+              </p>
+            </div>
+            <div class="portfolio-image-box">
+              <img class="portfolio-img" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/plan_portfolio-2.png" alt="portfolio">
+            </div>
+          </div>
         </div>
       </div>
       <div class="supplyment-area">
@@ -753,13 +1062,133 @@
           ※　分割支払いも可能です。（分割回数/金額はプランにより変動しますので、お問い合わせください）
         </p>
       </div>
+    </div>
+    <div id="case"></div>
+  </section>
+
+  <!-- 受講事例 -->
+  <section class="case__section case__section--revise" id="case">
+    <div class="container">
+      <h2 class="c_heading-text">
+        受講者の声
+      </h2>
+      <div class="c_heading-icon-area">
+        <div class="c_heading-icon"></div>
+      </div>
+      <div class="main-area">
+        <div class="item-box">
+          <div class="image-portion">
+            <p class="description-text">
+              月1件成約50万円の営業売上から、<br>
+              月5件成約350万円の<br>
+              過去最高記録を樹立！
+            </p>
+            <a class="read-button-link" href="<?php echo home_url(); ?>/top/case1">
+              <img class="img-pc" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/case_person-1-pc.png" alt="case-person">
+            </a>
+          </div>
+          <div class="text-portion">
+            <div class="top-text">
+              <p class="number number--pc">
+                01
+              </p>
+              <div class="text-block">
+                <p class="name">
+                  長木唯さん <span class="name--age">（30代/女性）</span>
+                </p>
+                <p class="career">
+                  会社員→<span class="career--strong">個人事業主</span>
+                </p>
+              </div>
+            </div>
+            <div class="description">
+              <a class="read-button-link" href="<?php echo home_url(); ?>/top/case1">
+                <button class="read-button">
+                  詳しく見てみる
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="item-box">
+          <div class="image-portion">
+            <p class="description-text">
+              平均3ヶ月で終了していた複業案件が<br>
+              平均6ヶ月以上続くようになることで<br>
+              起業のきっかけに！
+            </p>
+            <a class="read-button-link" href="<?php echo home_url(); ?>/top/case2">
+              <img class="img-pc" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/case_person-2-pc.png" alt="case-person">
+            </a>
+          </div>
+          <div class="text-portion">
+            <div class="top-text">
+              <p class="number number--pc">
+                02
+              </p>
+              <div class="text-block">
+                <p class="name">
+                  荒井祥平さん<span class="name--age"> （20代/男性）</span>
+                </p>
+                <p class="career">
+                  会社員→個人事業主→<span class="career--strong">会社経営</span></p>
+                </p>
+              </div>
+            </div>
+            <div class="description">
+              <a class="read-button-link" href="<?php echo home_url(); ?>/top/case2">
+                <button class="read-button">
+                  詳しく見てみる
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="item-box">
+          <div class="image-portion">
+            <p class="description-text">
+              2ヶ月で月収10万UP！<br>
+              複業案件数も増え、時給単価を上げられた<br>
+              ことで仕事のモチベーションに！
+            </p>
+            <a class="read-button-link" href="<?php echo home_url(); ?>/top/case3">
+              <img class="img-pc" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/case_person-3-pc.png" alt="case-person">
+            </a>
+          </div>
+          <div class="text-portion">
+            <div class="top-text">
+              <p class="number number--pc">
+                03
+              </p>
+              <div class="text-block">
+                <p class="name">
+                  御堂河内麻衣さん<span class="name--age">（30代/女性）</span>
+                </p>
+                <p class="career">
+                  会社員→<span class="career--strong">フリーランス</span>
+                </p>
+              </div>
+            </div>
+            <div class="description">
+              <a class="read-button-link" href="<?php echo home_url(); ?>/top/case3">
+                <button class="read-button">
+                  詳しく見てみる
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 初回公開時 -->
+      <!-- <div class="comingsoon">
+        <img class="img" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/coming_soon.png" alt="comingsoon">
+      </div> -->
       <div id="news"></div>
     </div>
   </section>
 
-
   <!-- ニュース -->
-  <section class="news__section" id="">
+  <section class="news__section news__section--revise" id="">
     <div class="container">
       <h2 class="c_heading-text">
         ニュース
@@ -768,51 +1197,54 @@
         <div class="c_heading-icon"></div>
       </div>
       <div class="main-area">
-        <!-- <div class="slider-area"> -->
-        <!-- Slider main container -->
-        <!-- <div class="swiper"> -->
-        <!-- Additional required wrapper -->
-        <!-- <div class="swiper-wrapper"> -->
-        <!-- Slides -->
-        <!-- <div class="swiper-slide">Slide 1</div>
-              <div class="swiper-slide">Slide 2</div>
-              <div class="swiper-slide">Slide 3</div>
-              ...
-            </div> -->
-        <!-- If we need pagination -->
-        <!-- <div class="swiper-pagination"></div> -->
-
-        <!-- If we need navigation buttons -->
-        <!-- <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div> -->
-
-        <!-- If we need scrollbar -->
-        <!-- <div class="swiper-scrollbar"></div>
-          </div>
-        </div>-->
+        <div class="item">
+          <p class="date-text">2024/3/4</p>
+          <p class="title">
+            <a class="link" href="https://www.amazon.co.jp/dp/4295409383?ref_=cm_sw_r_cp_ud_dp_9QS7KPXSEN6GTVTH7B0X" target="_blank" rel="noopener noreferrer">
+              『複業コンパス　100社経験から語る複業実践ノウハウ』出版
+            </a>
+          </p>
+        </div>
+        <div class="item">
+          <p class="date-text">2023/11/14</p>
+          <p class="title">
+            <a class="link" href="https://fukugyo-shokunin.peatix.com/view" target="_blank" rel="noopener noreferrer">
+              ウェビナー『100社の複業を経験したマイスターが教える『複業のマル秘ポイント』を大公開！』開催
+            </a>
+          </p>
+        </div>
+        <div class="item">
+          <p class="date-text">2023/9/26</p>
+          <p class="title">
+            <a class="link" href="https://company.aw-anotherworks.com/event/20230926" target="_blank" rel="noopener noreferrer">
+              ウェビナー『複業の案件獲得率と単価の上げ方を徹底解説〜地方案件も完全網羅〜』開催
+            </a>
+          </p>
+        </div>
       </div>
-      <div class="comingsoon">
+      <!-- 初回公開時 -->
+      <!-- <div class="comingsoon">
         <img class="img" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/coming_soon.png" alt="comingsoon">
-      </div>
+      </div> -->
     </div>
   </section>
 
-  <!-- 受講事例 -->
-  <section class="case__section" id="case">
+  <!-- 紹介動画 -->
+  <section class="movie__section" id="">
     <div class="container">
       <h2 class="c_heading-text">
-        受講事例
+        紹介動画
       </h2>
       <div class="c_heading-icon-area">
         <div class="c_heading-icon"></div>
       </div>
       <p class="c_subheading-text">
-
+        複業職人のプロモーションムービー（30秒）
       </p>
       <div class="main-area">
-      </div>
-      <div class="comingsoon">
-        <img class="img" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/coming_soon.png" alt="comingsoon">
+        <div class="movie-box">
+          <iframe width="100%" height="auto" src="https://www.youtube-nocookie.com/embed/8JseYwXaujc?si=sDewofHZqOkSen3g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
       </div>
     </div>
   </section>
@@ -829,21 +1261,21 @@
         一緒に模索していきましょう！
       </p>
       <a class="link" href="<?php echo home_url(); ?>/contact">
-        <button class="contact-button">
-          複業マイスターと無料面談してみる
+        <button class="contact-button" id="ga_contactClosingButton">
+          無料面談で複業スキルを発掘する
         </button>
       </a>
     </div>
   </section>
 
   <a class="fixed-button-link" href="<?php echo home_url(); ?>/contact">
-    <div class="fixed-button">
+    <div class="fixed-button" id="ga_contactFixedButton">
       <div class="inner">
         <img class="chat-icon" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/message_icon.png" alt="">
         <p class="button-text">
-          <span class="sp-disappear">複業マイスター<br>
-            と</span>無料面談<br>
-          してみる
+          無料面談で<br>
+          複業スキルを<br>
+          発掘する
         </p>
       </div>
     </div>
