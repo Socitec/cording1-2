@@ -65,34 +65,14 @@ const jsCompile = () => {
     .pipe(gulp.dest(distPath.js, { sourcemaps: './' }))
 }
 
-
-
-// gulp.task('js', function () {
-//     gulp.src('../_assets/javascript/*.js')
-//         .pipe(concat('script.js'))
-//         .pipe(gulp.dest('/js'));
-// });
-  
-// gulp.task('default', ['js']);
-
 /**
  * 画像圧縮
  */
-
 const imageminimize = () => {
   return gulp.src(srcPath.img)
     .pipe(imagemin())
     .pipe(gulp.dest(distPath.img))
 }
- 
-// gulp.task('img', function () {
-//     gulp.src('src/images/*')
-//         .pipe(imagemin())
-//         .pipe(gulp.dest('public/img'));
-// });
- 
-// gulp.task('default', ['img']);
-
 
 /**
  * html

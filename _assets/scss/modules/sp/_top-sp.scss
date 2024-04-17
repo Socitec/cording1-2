@@ -7,14 +7,12 @@
   //メインビジュアル
   .firstview__section {}
 
-
 }
 
 @media (width < $smartphone-breakpoint ) {
 
   //メインビジュアル
   .firstview__section {
-
     padding-top: $header-height_sp;
     padding-bottom: 0;
 

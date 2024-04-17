@@ -755,6 +755,14 @@ section {
 .about__section {
   background-color: rgba(255, 211, 98, 0.1);
 }
+.about__section .banner-area {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.about__section .banner-area .banner-img {
+  width: 620px;
+  max-width: 100%;
+}
 .about__section .main-area {
   position: relative;
   padding-top: 60px;
@@ -1440,6 +1448,10 @@ section {
   overflow: hidden;
   border: 0.5px solid #DFDFDF;
 }
+.plan__section .table-pc .table.table-sp--standard,
+.plan__section .table-box-sp .table.table-sp--standard {
+  border: 3px solid #E8C636;
+}
 .plan__section .table-pc th,
 .plan__section .table-box-sp th {
   padding-top: 19px;
@@ -1461,6 +1473,43 @@ section {
 .plan__section .table-pc .row-heading--standard,
 .plan__section .table-box-sp .row-heading--standard {
   background-color: #036EB7;
+  position: relative;
+}
+.plan__section .table-pc .recommend-img,
+.plan__section .table-box-sp .recommend-img {
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  width: 67.32px;
+  max-height: 100%;
+}
+.plan__section .table-pc .crown-img,
+.plan__section .table-box-sp .crown-img {
+  width: 16.4px;
+  position: absolute;
+  top: 5px;
+  left: calc(50% - 8.2px);
+}
+.plan__section .table-pc .crown-img.--sp,
+.plan__section .table-box-sp .crown-img.--sp {
+  top: 2px;
+}
+.plan__section .table-pc .table-line--top,
+.plan__section .table-box-sp .table-line--top {
+  border-top: 3px solid #E8C636;
+  border-right: 3px solid #E8C636;
+  border-left: 3px solid #E8C636;
+}
+.plan__section .table-pc .table-line--middle,
+.plan__section .table-box-sp .table-line--middle {
+  border-right: 3px solid #E8C636;
+  border-left: 3px solid #E8C636;
+}
+.plan__section .table-pc .table-line--bottom,
+.plan__section .table-box-sp .table-line--bottom {
+  border-right: 3px solid #E8C636;
+  border-left: 3px solid #E8C636;
+  border-bottom: 3px solid #E8C636;
 }
 .plan__section .table-pc .row-heading--afterfollow,
 .plan__section .table-box-sp .row-heading--afterfollow {
@@ -1472,7 +1521,7 @@ section {
 }
 .plan__section .table-pc td,
 .plan__section .table-box-sp td {
-  padding: 13px 20px;
+  padding: 13px 16px;
   border: 0.5px solid #DFDFDF;
   font-size: 14px;
   line-height: 1.6em;

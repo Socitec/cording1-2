@@ -105,6 +105,11 @@
         理想のライフスタイルを実現するための新しい働き方です
       </p> -->
       <div class="main-area">
+        <div class="banner-area">
+          <a href="https://amzn.asia/d/6BC1IFT" target="_blank" rel="noopener noreferrer">
+            <img class="banner-img" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/top_book-ranking.jpg" alt="ranking-top">
+          </a>
+        </div>
         <div class="heading-box">
           <h3 class="heading2-text">
             <span class="heading2-text--strong">複業</span>という働き方は、<br>
@@ -771,9 +776,13 @@
           <thead>
             <tr class="top-row">
               <th class="heading-column"></th>
-              <th class="row-heading row-heading--starter">スタータープラン</th>
-              <th class="row-heading row-heading--standard">スタンダードプラン</th>
-              <th class="row-heading row-heading--afterfollow">アフターフォロープラン<br> <span class="afterfollow--small">※スタンダードプラン修了者のみ申込可能</span></th>
+              <th class="row-heading row-heading--starter">トライアルプラン</th>
+              <th class="row-heading row-heading--standard table-line--top">
+                <img class="recommend-img" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/plan_recommend.png" alt="recommend">
+                <img class="crown-img" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/plan_crown.png" alt="crown">
+                複業職人プラン
+              </th>
+              <th class="row-heading row-heading--afterfollow">アップセルプラン<br> <span class="afterfollow--small">※複業職人プラン修了者のみ申込可能</span></th>
             </tr>
           </thead>
           <tbody>
@@ -781,87 +790,108 @@
               <td class="heading-column">こんな方に オススメ</td>
               <td class="main-data">
                 <img class="img" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/check_icon.png" alt="">
-                これから複業をしたい方 <br>
+                複業に不安をお持ちの方 <br>
                 <img class="img" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/check_icon.png" alt="">
-                複業して間もない方
+                自身に向いている複業案件を知りたい方<br>
+                <img class="img" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/check_icon.png" alt="">
+                自身の複業スキルを可視化されたい方
               </td>
-              <td class="main-data">
+              <td class="main-data table-line--middle">
                 <img class="img" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/check_icon.png" alt="">
-                これから複業を本格的に行っていきたい方 <br>
+                スキルには自身があり、面談には進むも<br>
+                　案件獲得が難しい方 <br>
                 <img class="img" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/check_icon.png" alt="">
-                既に複業しており、更に案件を増やしたい方
+                複業先と対等に折衝する力を得たい方
               </td>
               <td class="main-data">
                 <img class="img" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/check_icon-orange.png" alt="">
-                安定した中長期の案件を得たい方<br>
-                ※スタンダードプラン修了者のみ申込可能なプランです。
+                安定して3ヶ月以上の案件を得たい方<br>
+                <img class="img" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/check_icon-orange.png" alt="">
+                自身の契約単価を今よりも上げたい方<br>
+                ※複業職人プラン修了者のみ申込可能なプランです。
               </td>
             </tr>
             <tr class="main-row">
               <td class="heading-column">内容／<br class="sp-disappear"> 得られること</td>
               <td class="main-data">
                 <span class="main-data--heading">プログラム１～３まで</span><br>
-                <span class="main-data--stater-number">1.</span>複業の目的／動機の明確化 <br>
-                <span class="main-data--stater-number">2.</span> 自身のハッシュタグ／ポートフォリオ<br>
+                <span class="main-data--stater-number">1.</span>ご自身のライフスコアの可視化 <br>
+                <span class="main-data--stater-number">2.</span> ご自身のハッシュタグ／ポートフォリオ作成<br>
                 <span class="main-data--stater-number">3.</span> 自分に適した案件を見つける力
               </td>
-              <td class="main-data">
+              <td class="main-data table-line--middle">
                 <span class="main-data--heading">プログラム1～5まで</span><br>
-                <span class="main-data--standard-number">1.</span>複業の目的／動機の明確化 <br>
-                <span class="main-data--standard-number">2.</span> 自身のハッシュタグ／ポートフォリオ<br>
+                <span class="main-data--standard-number">1.</span> ご自身のライフスコアの可視化 <br>
+                <span class="main-data--standard-number">2.</span> ご自身のハッシュタグ／ポートフォリオ作成<br>
                 <span class="main-data--standard-number">3.</span> 自分に適した案件を見つける力<br>
                 <span class="main-data--standard-number">4.</span> 自身のプレゼンテーションスキル <br>
                 <span class="main-data--standard-number">5.</span> 複業先との提案力／折衝力<br>
               </td>
               <td class="main-data">
                 <span class="main-data--heading">プログラム6</span><br>
-                <span class="main-data--afterfollow-number">6.</span>複業先との業務をよりよく進めるため、<br> 　業務をマネジメント／<br> 　ディレクションするスキル
+                <span class="main-data--afterfollow-number">6.</span><span class="main-data--heading">複業活動全般のフォローアップ</span><br>
+                ・新規複業案件の獲得における提案検討<br>
+                ・既存の複業先に対する報酬や契約期間の<br>
+                　アップセル検討<br>
+                ・複業先との業務をよりよく進めるため、<br>
+                　業務をマネジメント／ディレクションする<br>
+                　方法を教示
               </td>
             </tr>
             <tr class="main-row">
               <td class="heading-column">受講期間／時間</td>
               <td class="main-data data--center">
-                <span class="main-data--heading">1.5ヶ月間<br> 計5時間程度</span><br>
-                ※プログラム1回につき1.5～2時間程度
+                <span class="main-data--heading">1ヶ月<br>
+                  （月2回の1on1受講:約3時間程度）</span><br>
+                ※1回につき1.5～2時間程度
+              </td>
+              <td class="main-data data--center table-line--middle">
+                <span class="main-data--heading">3ヶ月間 <br>
+                  （月2回の1on1受講:約10時間程度） </span><br>
+                ※1回につき1.5～2時間程度
               </td>
               <td class="main-data data--center">
-                <span class="main-data--heading">3ヶ月間 <br>計8時間程度 </span><br>
-                ※プログラム1回につき1.5～2時間程度
-              </td>
-              <td class="main-data data--center">
-                <span class="main-data--heading">1年間 </span><br>
-                面談は月1回/1時間程度 <br>チャットは随時可能
+                <span class="main-data--heading">6ヶ月〜 </span><br>
+                面談は月1回/1時間程度 <br>
+                チャットは随時可能
               </td>
             </tr>
             <tr class="main-row">
               <td class="heading-column">料金</td>
               <td class="main-data data--center">
-                <span class="main-data--heading">30万円 </span><br>
-                ※受講開始時にお支払い（分割可）
+                <span class="main-data--heading">15万円</span><br>
+                ※受講開始時にお支払い<br>
+                （分割可）
+              </td>
+              <td class="main-data data--center table-line--middle">
+                <span class="main-data--heading">40万円 </span><br>
+                ※受講開始時にお支払い<br>
+                （分割可）
               </td>
               <td class="main-data data--center">
-                <span class="main-data--heading">45万円 </span><br>
-                ※受講開始時にお支払い（分割可）
-              </td>
-              <td class="main-data data--center">
-                チャットのみ：月3万円 <br>面談＋チャット：月5万円<br> ※アフターフォロープランのみ<br> 月額支払いとなります
+                面談＋チャット：月5万円 <br>
+                ※アフターフォロープランのみ<br>
+                月額支払いとなります
               </td>
             </tr>
             <tr class="main-row">
               <td class="heading-column">特典</td>
               <td class="main-data data--center">
                 ご自身の価値を最大化する <br>
-                ポートフォリオ集
+                ポートフォリオ集<br>
+                受講者様独自のライフスコアシート
               </td>
-              <td class="main-data data--center">
+              <td class="main-data data--center table-line--bottom">
                 <span class="main-data--heading">複業クラウド認定バッジ </span><br>
-                ポートフォリオ集 <br>
+                複業コミュニティ招待/複業職人ロール付与 <br>
+                （複業/副業案件紹介あり）<br>
+                ポートフォリオ集<br>
                 提案資料ひな型<br>
                 複業契約書ひな形
               </td>
               <td class="main-data data--center">
-                随時Color WiTh社より <br>
-                案件紹介の可能性あり
+                若色/高橋から <br>
+                複業案件を優先的にご紹介
               </td>
             </tr>
           </tbody>
@@ -871,7 +901,7 @@
           <table class="table" border="1">
             <thead>
               <tr class="top-row">
-                <th class="row-heading row-heading--starter">スタータープラン</th>
+                <th class="row-heading row-heading--starter">トライアルプラン</th>
               </tr>
             </thead>
             <tbody>
@@ -879,48 +909,57 @@
                 <td class="heading-column">こんな方に オススメ</td>
                 <td class="main-data">
                   <img class="img" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/check_icon.png" alt="">
-                  これから複業をしたい方 <br>
+                  複業に不安をお持ちの方 <br>
                   <img class="img" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/check_icon.png" alt="">
-                  複業して間もない方
+                  自身に向いている複業案件を知りたい方<br>
+                  <img class="img" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/check_icon.png" alt="">
+                  自身の複業スキルを可視化されたい方
                 </td>
               </tr>
               <tr class="main-row">
                 <td class="heading-column">内容／得られること</td>
                 <td class="main-data">
                   <span class="main-data--heading">プログラム１～３まで</span><br>
-                  <span class="main-data--stater-number">1.</span>複業の目的／動機の明確化 <br>
-                  <span class="main-data--stater-number">2.</span> 自身のハッシュタグ／ポートフォリオ<br>
+                  <span class="main-data--stater-number">1.</span> ご自身のライフスコアの可視化 <br>
+                  <span class="main-data--stater-number">2.</span> ご自身のハッシュタグ／ポートフォリオ作成<br>
                   <span class="main-data--stater-number">3.</span> 自分に適した案件を見つける力
                 </td>
               </tr>
               <tr class="main-row">
                 <td class="heading-column">受講期間／時間</td>
                 <td class="main-data data--center">
-                  <span class="main-data--heading">1.5ヶ月間<br> 計5時間程度</span><br>
-                  ※プログラム1回につき1.5～2時間程度
+                  <span class="main-data--heading">1ヶ月<br>
+                    （月2回の1on1受講:約3時間程度）</span><br>
+                  ※1回につき1.5～2時間程度
                 </td>
               </tr>
               <tr class="main-row">
                 <td class="heading-column">料金</td>
                 <td class="main-data data--center">
-                  <span class="main-data--heading">30万円 </span><br>
-                  ※受講開始時にお支払い（分割可）
+                  <span class="main-data--heading">15万円 </span><br>
+                  ※受講開始時にお支払い<br>
+                  （分割可）
                 </td>
               </tr>
               <tr class="main-row">
                 <td class="heading-column">特典</td>
                 <td class="main-data data--center">
                   ご自身の価値を最大化する <br>
-                  ポートフォリオ集
+                  ポートフォリオ集<br>
+                  受講者様独自のライフスコアシート
                 </td>
               </tr>
             </tbody>
           </table>
 
-          <table class="table" border="1">
+          <table class="table table-sp--standard" border="1">
             <thead>
               <tr class="top-row">
-                <th class="row-heading row-heading--standard">スタンダードプラン</th>
+                <th class="row-heading row-heading--standard">
+                  <img class="recommend-img" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/plan_recommend.png" alt="recommend">
+                  <img class="crown-img --sp" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/plan_crown.png" alt="crown">
+                  複業職人プラン
+                </th>
               </tr>
             </thead>
             <tbody>
@@ -928,17 +967,18 @@
                 <td class="heading-column">こんな方に オススメ</td>
                 <td class="main-data">
                   <img class="img" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/check_icon.png" alt="">
-                  これから複業を本格的に行っていきたい方 <br>
+                  スキルには自身があり、面談には進むも <br>
+                  　案件獲得が難しい方<br>
                   <img class="img" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/check_icon.png" alt="">
-                  既に複業しており、更に案件を増やしたい方
+                  複業先と対等に折衝する力を得たい方
                 </td>
               </tr>
               <tr class="main-row">
                 <td class="heading-column">内容／得られること</td>
                 <td class="main-data">
                   <span class="main-data--heading">プログラム1～5まで</span><br>
-                  <span class="main-data--standard-number">1.</span>複業の目的／動機の明確化 <br>
-                  <span class="main-data--standard-number">2.</span> 自身のハッシュタグ／ポートフォリオ<br>
+                  <span class="main-data--standard-number">1.</span> ご自身のライフスコアの可視化 <br>
+                  <span class="main-data--standard-number">2.</span> ご自身のハッシュタグ／ポートフォリオ作成<br>
                   <span class="main-data--standard-number">3.</span> 自分に適した案件を見つける力<br>
                   <span class="main-data--standard-number">4.</span> 自身のプレゼンテーションスキル <br>
                   <span class="main-data--standard-number">5.</span> 複業先との提案力／折衝力<br>
@@ -947,21 +987,25 @@
               <tr class="main-row">
                 <td class="heading-column">受講期間／時間</td>
                 <td class="main-data data--center">
-                  <span class="main-data--heading">3ヶ月間 <br>計8時間程度 </span><br>
-                  ※プログラム1回につき1.5～2時間程度
+                  <span class="main-data--heading">3ヶ月間 <br>
+                    （月2回の1on1受講:約10時間程度） </span><br>
+                  ※1回につき1.5～2時間程度
                 </td>
               </tr>
               <tr class="main-row">
                 <td class="heading-column">料金</td>
                 <td class="main-data data--center">
-                  <span class="main-data--heading">45万円 </span><br>
-                  ※受講開始時にお支払い（分割可）
+                  <span class="main-data--heading">40万円 </span><br>
+                  ※受講開始時にお支払い<br>
+                  （分割可）
                 </td>
               </tr>
               <tr class="main-row">
                 <td class="heading-column">特典</td>
                 <td class="main-data data--center">
                   <span class="main-data--heading">複業クラウド認定バッジ </span><br>
+                  複業コミュニティ招待/複業職人ロール付与<br>
+                  （複業/副業案件紹介あり）<br>
                   ポートフォリオ集<br>
                   提案資料ひな型 <br>
                   複業契約書ひな形
@@ -973,7 +1017,7 @@
           <table class="table" border="1">
             <thead>
               <tr class="top-row">
-                <th class="row-heading row-heading--afterfollow">アフターフォロープラン<br> <span class="afterfollow--small">※スタンダードプラン修了者のみ申込可能</span></th>
+                <th class="row-heading row-heading--afterfollow">アップセルプラン<br> <span class="afterfollow--small">※複業職人プラン修了者のみ申込可能</span></th>
               </tr>
             </thead>
             <tbody>
@@ -981,37 +1025,46 @@
                 <td class="heading-column">こんな方に オススメ</td>
                 <td class="main-data">
                   <img class="img" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/check_icon-orange.png" alt="">
-                  安定した中長期の案件を得たい方<br>
-                  ※スタンダードプラン修了者のみ申込可能なプランです。
+                  安定して3ヶ月以上の案件を得たい方<br>
+                  <img class="img" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/check_icon-orange.png" alt="">
+                  自身の契約単価を今よりも上げたい方<br>
+                  ※複業職人プラン修了者のみ申込可能なプランです。
                 </td>
               </tr>
               <tr class="main-row">
                 <td class="heading-column">内容／得られること</td>
                 <td class="main-data">
                   <span class="main-data--heading">プログラム6</span><br>
-                  <span class="main-data--afterfollow-number">6.</span>複業先との業務をよりよく進めるため、<br> 　業務をマネジメント／<br> 　ディレクションするスキル
+                  <span class="main-data--afterfollow-number">6.</span>複業活動全般のフォローアップ<br>
+                  ・新規複業案件の獲得における提案検討<br>
+                  ・既存の複業先に対する報酬や契約期間の<br>
+                  　アップセル検討<br>
+                  ・複業先との業務をよりよく進めるため、<br>
+                  　業務をマネジメント／ディレクションする<br>
+                  　方法を教示
                 </td>
               </tr>
               <tr class="main-row">
                 <td class="heading-column">受講期間／時間</td>
                 <td class="main-data data--center">
-                  <span class="main-data--heading">1年間 </span><br>
-                  面談は月1回/1時間程度 <br>チャットは随時可能
+                  <span class="main-data--heading">6ヶ月〜 </span><br>
+                  面談は月1回/1時間程度 <br>
+                  チャットは随時可能
                 </td>
               </tr>
               <tr class="main-row">
                 <td class="heading-column">料金</td>
                 <td class="main-data data--center">
-                  チャットのみ：月3万<br>
                   面談＋チャット：月5万<br>
-                  ※アフターフォロープランのみ月額支払いとなります
+                  ※アップセルプランのみ<br>
+                  月額支払いとなります
                 </td>
               </tr>
               <tr class="main-row">
                 <td class="heading-column">特典</td>
                 <td class="main-data data--center">
-                  随時Color WiTh社より<br>
-                  案件紹介の可能性あり
+                  若色/高橋から<br>
+                  複業案件を優先的にご紹介
                 </td>
               </tr>
             </tbody>

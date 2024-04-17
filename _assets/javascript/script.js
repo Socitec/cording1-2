@@ -38,7 +38,6 @@ let menu = document.querySelector(".js-nav-area");
 let accordionTrigger = document.querySelectorAll(".js-sp-accordion-trigger");
 let accordion = document.querySelectorAll(".js-sp-accordion");
 let menuList = document.getElementsByClassName("js-menu-link");
-console.log(menuList);
 
 // メニュー開閉制御
 humberger.addEventListener("click", (e) => { //ハンバーガーボタンが選択されたら
