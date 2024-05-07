@@ -105,9 +105,12 @@
         理想のライフスタイルを実現するための新しい働き方です
       </p> -->
       <div class="main-area">
-        <div class="banner-area">
+      <div class="banner-area">
           <a href="https://amzn.asia/d/6BC1IFT" target="_blank" rel="noopener noreferrer">
-            <img class="banner-img" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/top_book-ranking.jpg" alt="ranking-top">
+            <img class="banner-img__book" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/top_book-ranking.jpg" alt="ranking-top">
+          </a>
+          <a href="https://www.1242.com/tytimes/tytimes_blog/20240502-317160/" target="_blank" rel="noopener noreferrer">
+            <img class="banner-img__radio" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/radiobanner.jpg" alt="ranking-top">
           </a>
         </div>
         <div class="heading-box">
@@ -1251,6 +1254,14 @@
         <div class="c_heading-icon"></div>
       </div>
       <div class="main-area">
+        <div class="item">
+          <p class="date-text">2024/4/25</p>
+          <p class="title">
+            <a class="link" href="https://podcast.1242.com/show/t-times/" target="_blank" rel="noopener noreferrer">
+              ニッポン放送 "竹内由恵のT-Times"にて講師の若色が対談をしました！
+            </a>
+          </p>
+        </div>
         <div class="item">
           <p class="date-text">2024/3/4</p>
           <p class="title">

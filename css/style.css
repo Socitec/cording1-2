@@ -758,9 +758,26 @@ section {
 .about__section .banner-area {
   text-align: center;
   padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
 }
-.about__section .banner-area .banner-img {
+@media (width < 600px) {
+  .about__section .banner-area {
+    display: block;
+  }
+}
+.about__section .banner-area .banner-img__book {
   width: 620px;
+  max-width: 100%;
+}
+@media (width < 600px) {
+  .about__section .banner-area .banner-img__book {
+    padding-bottom: 50px;
+  }
+}
+.about__section .banner-area .banner-img__radio {
+  width: 300px;
   max-width: 100%;
 }
 .about__section .main-area {

@@ -1,0 +1,151 @@
+/* Contactページ */
+
+@use "../mixin" as *; //変数読み込み
+
+/* メインビジュアル */
+.contactPage__firstview__section {
+  padding-top: 92px;
+  padding-bottom: 22px;
+  background: url(../img/top_contact-background.png);
+  text-align: center;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top-heading-text {
+    padding-top: 62px;
+    padding-bottom: 36px;
+    font-size: $large5-font-size;
+    color: #fff;
+    font-weight: 600;
+  }
+
+  .contact__heading-text {
+    display: inline-block;
+    padding-right: 23px;
+    padding-left: 23px;
+    font-size: $large6-font-size;
+    background-color: #fff;
+    font-weight: 600;
+    letter-spacing: 1.6px;
+    width: max-content;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .contact__heading--strong {
+    font-size: 50px;
+    color: $sub3-text-color;
+    font-weight: 600;
+    letter-spacing: 9.5px;
+    background-image: radial-gradient(circle at center, $main-text-color 10%, transparent 10%);
+    background-position: top left;
+    background-repeat: repeat-x;
+    background-size: 1.1em 0.3em;
+    padding-top: .1em;
+  }
+
+  .description {
+    padding: 27px 23px 30px;
+    font-size: $large-font-size;
+    font-weight: 600;
+    line-height: 40px;
+  }
+
+}
+
+//問合せフォーム
+.contactPage__form__section {
+  padding-top: 100px;
+  padding-bottom: 80px;
+  background-color: $main-background-color;
+
+  form {
+    display: grid;
+    gap: 50px;
+  }
+
+  .container {
+    width: min(100%, 1000px);
+  }
+
+  .form-label-box {
+    color: #000;
+    font-size: $large2-font-size;
+    font-weight: 700;
+  }
+
+
+  .form-item {
+    .wpcf7-text {
+      min-height: 60px;
+      align-items: center;
+      border: 1px solid #dfdfdf;
+      background-color: #fff;
+    }
+
+    .form-checkbox {
+      padding-top: 20px;
+    }
+
+    .wpcf7-textarea {
+      width: 100%;
+      border: 1px solid #dfdfdf;
+      background-color: #fff;
+    }
+
+    .wpcf7-checkbox {
+      display: grid;
+      gap: 20px;
+    }
+  }
+
+  .wpcf7-list-item-label {
+    font-size: $large-font-size;
+  }
+
+  #name {
+    .wpcf7-text {
+      width: min(100%, 500px);
+    }
+  }
+
+  #mail {
+    .wpcf7-text {
+      width: min(100%, 700px);
+    }
+  }
+
+  #telephone {
+    .wpcf7-text {
+      width: min(100%, 500px);
+    }
+  }
+
+  .form-button {
+    p {
+      text-align: center;
+      color: rgba($color: #fff, $alpha: 0);
+    }
+  }
+
+
+  .submit-button {
+    padding: 11px 69px;
+    background-color: $button-background-color;
+    border-radius: 100px;
+    font-size: $large3-font-size;
+    color: #fff;
+    font-weight: 700;
+
+    br {
+      display: none;
+    }
+
+    .wpcf7-spinner {
+      display: none;
+    }
+  }
+}

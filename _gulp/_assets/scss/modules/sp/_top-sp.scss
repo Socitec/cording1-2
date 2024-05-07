@@ -1,0 +1,163 @@
+/* TOP_SP */
+
+@use "../mixin" as *; //変数読み込み
+
+@media (width < 1020px) {
+
+  //メインビジュアル
+  .firstview__section {}
+
+}
+
+@media (width < $smartphone-breakpoint ) {
+
+  //メインビジュアル
+  .firstview__section {
+    padding-top: $header-height_sp;
+    padding-bottom: 0;
+
+    .container {
+      padding-bottom: 30px;
+    }
+
+    .topimg--pc {
+      display: none;
+    }
+
+    .topimg--sp {
+      display: inline-block;
+      width: 100%;
+    }
+
+    .button-area {
+      top: 108.20vw;
+    }
+
+    .button {
+      font-size: $small-font-size;
+      padding-right: 28px;
+      padding-left: 28px;
+    }
+
+    .button-link {
+      font-size: $main-font-size;
+    }
+
+    .bottom-text {
+      font-size: $small2-font-size;
+      line-height: 1.3em;
+      height: 0;
+      margin-top: 7vw;
+    }
+
+    .bottom-text {
+      margin-top: 10px;
+    }
+  }
+
+  //こんな人におすすめ
+  .target__section {
+
+    .main-area {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+
+  //複業職人とは
+  .fukugyoShokunin__section {
+
+    .bottom-portion {
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+
+    .text {}
+  }
+
+  //特徴
+  .feature__section {
+
+    .bottom-portion {
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+
+    .text {
+      padding-bottom: 30px;
+    }
+  }
+
+  //講師紹介-改修
+  .staffIntroduction__section,
+  .supervise__section {
+
+    .company {
+      text-align: left;
+    }
+
+    .heading2-text {
+      text-align: left;
+    }
+  }
+
+  //講師紹介
+  .staff__section,
+  .supervise__section {
+
+    .company {
+      text-align: left;
+    }
+
+    .heading2-text {
+      text-align: left;
+    }
+  }
+
+  //プログラム
+  .program__section {
+
+    .heading2-item {
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .number {
+      margin-right: auto;
+    }
+  }
+
+  //プラン
+  .plan__section {
+
+    .table-pc {
+      display: none;
+    }
+
+    .table-box-sp {
+      display: grid;
+      gap: 30px;
+      white-space: initial;
+    }
+
+    .heading-column {
+      display: block;
+      width: 100%;
+    }
+
+    th {
+      display: block;
+      width: 100%;
+    }
+
+    td {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  //固定ボタン
+  .fixed-button {
+    background-color: $main-button-color;
+  }
+}

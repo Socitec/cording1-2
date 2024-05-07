@@ -1,0 +1,116 @@
+/* Case_TB */
+
+@use "../mixin" as *; //変数読み込み
+
+@media (width < $tablet-breakpoint ) {
+
+
+  //受講事例
+  .case-page {
+    padding-top: $header-height_sp;
+
+    .main__section {
+      padding-bottom: 50px;
+
+      .casePage-heading-icon-area {
+        margin-bottom: 5px;
+      }
+
+      .main-area {
+        grid-template-columns: 1fr;
+        padding: 29px 20px 40px;
+      }
+
+      .center-wrap {
+        grid-template-columns: 1fr;
+        padding-top: 30px;
+      }
+
+      .sub-heading-text {
+        line-height: 24px;
+      }
+
+      .image-portion {
+        flex-direction: column-reverse;
+      }
+
+      .img-pc {
+        height: auto;
+      }
+
+      .case-text {
+        font-size: $large2-font-size;
+      }
+
+      .text-portion {
+        padding: 0 0 30px;
+      }
+
+      .number {
+        font-size: 35px;
+        margin-left: 6px;
+      }
+
+      .name {
+        font-size: $main-font-size;
+      }
+
+      .sub-heading-text {
+        font-size: $main-font-size;
+      }
+
+      .description-text {
+        padding: 14px 0 14px;
+        font-size: $small2-font-size;
+        line-height: 24px;
+      }
+
+      .text-portion {
+        padding: 0;
+      }
+
+      .description {
+        padding-top: 0;
+      }
+
+      .top-text {
+        padding: 16px 0 10px;
+      }
+
+      .career {
+        padding-top: 0;
+        padding-bottom: 15px;
+        font-size: $small-font-size;
+
+        &--strong {
+          font-size: $small-font-size;
+        }
+      }
+
+      .comingsoon {
+        padding-top: 30px;
+
+        .img {
+          width: 127px;
+        }
+      }
+
+      .question-item {
+        gap: 10px;
+      }
+
+      .question-portion {
+        padding: 16.5px 10px;
+        border-radius: 10px;
+      }
+
+      .question-text {
+        font-size: $small-font-size;
+      }
+
+      .answer-text {
+        font-size: $small2-font-size;
+      }
+    }
+  }
+}

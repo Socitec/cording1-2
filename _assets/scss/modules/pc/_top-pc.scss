@@ -107,9 +107,25 @@
   .banner-area {
     text-align: center;
     padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
 
-    .banner-img {
+    @media (width < $smartphone-breakpoint ) {
+      display: block;
+    }
+
+    .banner-img__book {
       width: 620px;
+      max-width: 100%;
+
+      @media (width < $smartphone-breakpoint ) {
+        padding-bottom: 50px;
+      }
+    }
+
+    .banner-img__radio {
+      width: 300px;
       max-width: 100%;
     }
   }
