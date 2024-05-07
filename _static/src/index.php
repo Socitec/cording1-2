@@ -353,20 +353,21 @@
               </p>
               <div class="heading2-portion">
                 <h3 class="heading2-text">
-                  複業の目的 ／<br class="c_sp-emerge"> 動機の発掘
+                  ご自身のライフスコアの可視化
                 </h3>
               </div>
             </div>
             <p class="description">
-              複業をより有意義に進められるように「何のために複業をするのか？」目的の明確化と、その根拠となる動機の発掘を行います。<br>
+              複業をより有意義に進められるように、独自の“ライフスコア”を活用し、<br>
+              「何のために複業をするのか？」目的の明確化と、その根拠となる動機の発掘を行います。<br>
               また複業の進め方も共有し、複業が初めての方も複業活動の全体像が把握できるように進めていきます。
             </p>
             <div class="icon-portion">
               <p class="plan-icon icon--starter">
-                スタータープラン
+                トライアルプラン
               </p>
               <p class="plan-icon icon--standard">
-                スタンダードプラン
+                複業職人プラン
               </p>
             </div>
           </div>
@@ -388,10 +389,10 @@
             </p>
             <div class="icon-portion">
               <p class="plan-icon icon--starter">
-                スタータープラン
+                トライアルプラン
               </p>
               <p class="plan-icon icon--standard">
-                スタンダードプラン
+                複業職人プラン
               </p>
             </div>
           </div>
@@ -416,10 +417,10 @@
             </p>
             <div class="icon-portion">
               <p class="plan-icon icon--starter">
-                スタータープラン
+                トライアルプラン
               </p>
               <p class="plan-icon icon--standard">
-                スタンダードプラン
+                複業職人プラン
               </p>
             </div>
           </div>
@@ -444,7 +445,7 @@
             </p>
             <div class="icon-portion">
               <p class="plan-icon icon--standard">
-                スタンダードプラン
+                複業職人プラン
               </p>
             </div>
           </div>
@@ -469,7 +470,7 @@
             </p>
             <div class="icon-portion">
               <p class="plan-icon icon--standard">
-                スタンダードプラン
+                複業職人プラン
               </p>
             </div>
           </div>
@@ -481,7 +482,7 @@
               </p>
               <div class="heading2-portion">
                 <h3 class="heading2-text">
-                  アフターフォロー
+                  アップセル
                 </h3>
               </div>
             </div>
@@ -491,7 +492,7 @@
             </p>
             <div class="icon-portion">
               <p class="plan-icon icon--afterfollow">
-                アフターフォロープラン
+                アップセルプラン
               </p>
             </div>
           </div>
@@ -798,7 +799,7 @@
               </td>
               <td class="main-data table-line--middle">
                 <img class="img" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/check_icon.png" alt="">
-                スキルには自身があり、面談には進むも<br>
+                スキルには自信があり、面談には進むも<br>
                 　案件獲得が難しい方 <br>
                 <img class="img" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/check_icon.png" alt="">
                 複業先と対等に折衝する力を得たい方
@@ -846,7 +847,7 @@
                 ※1回につき1.5～2時間程度
               </td>
               <td class="main-data data--center table-line--middle">
-                <span class="main-data--heading">3ヶ月間 <br>
+                <span class="main-data--heading">3ヶ月 <br>
                   （月2回の1on1受講:約10時間程度） </span><br>
                 ※1回につき1.5～2時間程度
               </td>
@@ -870,7 +871,7 @@
               </td>
               <td class="main-data data--center">
                 面談＋チャット：月5万円 <br>
-                ※アフターフォロープランのみ<br>
+                ※アップセルプランのみ<br>
                 月額支払いとなります
               </td>
             </tr>
@@ -967,7 +968,7 @@
                 <td class="heading-column">こんな方に オススメ</td>
                 <td class="main-data">
                   <img class="img" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/check_icon.png" alt="">
-                  スキルには自身があり、面談には進むも <br>
+                  スキルには自信があり、面談には進むも <br>
                   　案件獲得が難しい方<br>
                   <img class="img" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/check_icon.png" alt="">
                   複業先と対等に折衝する力を得たい方
@@ -987,7 +988,7 @@
               <tr class="main-row">
                 <td class="heading-column">受講期間／時間</td>
                 <td class="main-data data--center">
-                  <span class="main-data--heading">3ヶ月間 <br>
+                  <span class="main-data--heading">3ヶ月 <br>
                     （月2回の1on1受講:約10時間程度） </span><br>
                   ※1回につき1.5～2時間程度
                 </td>
@@ -1106,7 +1107,7 @@
           ※　金額はすべて税別です。
         </p>
         <p class="supplyment">
-          ※　スタータープラン修了後、プログラム④⑤の追加受講を希望される場合、プラン③修了後 1週間以内に希望した場合は＋15万円にて、1週間以降に希望した場合は＋20万円にて、受講可能となります。 <br>
+          ※　トライアルプラン修了後、プログラム④⑤の追加受講を希望される場合、プラン③修了後 1週間以内に希望した場合は＋25万円にて、1週間以降に希望した場合は＋35万円にて、受講可能となります。 <br>
         </p>
         <p class="supplyment">
           ※　受講期間を過ぎた場合の延長保証は、追加1ヶ月間までとなります。 <br>
